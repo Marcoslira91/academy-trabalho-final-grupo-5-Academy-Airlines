@@ -1,5 +1,7 @@
 { 
     "name": "#(name)", 
     "email": "#(email)",
-    "password": "#(password)"
+    "password": "#(password)",
+    "id": "#(id)",
+    "is_admin": "#(isAdmin)"
 }

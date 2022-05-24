@@ -10,6 +10,8 @@ Feature: hook
 
         Given url baseUrl
         And path "/users"
-        And request payload
+        And request { name: "#(payload.name)", email: "#(payload.email)", password: "#(payload.password)"}
         When method post
-        Then status 201
+        
+        * def id = response.id
+        * def isAdmin = response.is_admin

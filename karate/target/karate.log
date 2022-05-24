@@ -307,3 +307,3957 @@ email=emailDoUsuario%40AcademyAirlines.com&password=1653359874260academy
 }
 
 23:37:56.964 [main]  INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) login.feature
+14:07:05.461 [main]  INFO  com.intuit.karate - Karate version: 1.1.0
+14:07:05.608 [main]  DEBUG com.intuit.karate.Suite - [config] karate-config.js
+14:07:05.609 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1653412025609
+14:07:06.450 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 153
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "24578d4a-d924-431e-bcb8-dadfb740632euser",
+  "email": "460093fa-d46d-41eb-91ff-137bc0d400e1@academy-airlines.com",
+  "password": "1653412026270academy"
+}
+
+
+14:07:07.515 [main]  DEBUG com.intuit.karate - response time in milliseconds: 1063
+1 < 201
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 180
+1 < Etag: W/"b4-5/KJFm/UvaGl2Kdl9tWNUWBT6cQ"
+1 < Date: Tue, 24 May 2022 17:07:07 GMT
+1 < Via: 1.1 vegur
+{
+  "id": "92909589-2c05-477e-94da-45d503cabbdf",
+  "name": "24578d4a-d924-431e-bcb8-dadfb740632euser",
+  "email": "460093fa-d46d-41eb-91ff-137bc0d400e1@academy-airlines.com",
+  "is_admin": false
+}
+
+14:07:08.016 [main]  INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) criarUsuario.feature
+14:21:02.716 [main]  INFO  com.intuit.karate - Karate version: 1.1.0
+14:21:03.233 [main]  DEBUG com.intuit.karate.Suite - [config] karate-config.js
+14:21:03.234 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1653412863234
+14:21:06.349 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 153
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "2d19ce4f-f01c-4313-a858-df6bc21c6d8cuser",
+  "email": "33157664-fb2a-4573-84c9-92a8847029cc@academy-airlines.com",
+  "password": "1653412865344academy"
+}
+
+
+14:21:08.174 [main]  DEBUG com.intuit.karate - response time in milliseconds: 1819
+1 < 201
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 180
+1 < Etag: W/"b4-Pka3mzupfbpwv/JIGc0ppRL1mF4"
+1 < Date: Tue, 24 May 2022 17:21:07 GMT
+1 < Via: 1.1 vegur
+{
+  "id": "6adeda26-6da3-4707-bc47-411cb542279e",
+  "name": "2d19ce4f-f01c-4313-a858-df6bc21c6d8cuser",
+  "email": "33157664-fb2a-4573-84c9-92a8847029cc@academy-airlines.com",
+  "is_admin": false
+}
+
+14:21:08.214 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 62
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "#(name)",
+  "email": "#(email)",
+  "password": "#(password)"
+}
+
+
+14:21:09.245 [main]  DEBUG com.intuit.karate - response time in milliseconds: 1031
+1 < 400
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 24
+1 < Etag: W/"18-928jOLijreS3ro9mYfVt0IU4k/0"
+1 < Date: Tue, 24 May 2022 17:21:09 GMT
+1 < Via: 1.1 vegur
+{
+  "error": "Bad request."
+}
+
+14:21:09.250 [main]  ERROR com.intuit.karate - criarUsuario.feature:27
+Then status 422
+status code was: 400, expected: 422, response time in milliseconds: 1031, url: https://lista-compras-api.herokuapp.com/api/v1/users, response: 
+{"error":"Bad request."}
+criarUsuario.feature:27
+14:21:09.778 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) criarUsuario.feature
+14:22:10.294 [main]  INFO  com.intuit.karate - Karate version: 1.1.0
+14:22:10.458 [main]  DEBUG com.intuit.karate.Suite - [config] karate-config.js
+14:22:10.459 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1653412930459
+14:22:11.346 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 153
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "abba7f70-bd1e-4725-b2cf-698cd94f9044user",
+  "email": "ba54fde5-c871-49ea-91d2-847dbd808d0b@academy-airlines.com",
+  "password": "1653412931142academy"
+}
+
+
+14:22:12.529 [main]  DEBUG com.intuit.karate - response time in milliseconds: 1182
+1 < 201
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 180
+1 < Etag: W/"b4-oMi93XWXOymP9+O4ppLC4D7UpWc"
+1 < Date: Tue, 24 May 2022 17:22:12 GMT
+1 < Via: 1.1 vegur
+{
+  "id": "c8c91ba1-ef08-4722-a6bb-2186223f0a18",
+  "name": "abba7f70-bd1e-4725-b2cf-698cd94f9044user",
+  "email": "ba54fde5-c871-49ea-91d2-847dbd808d0b@academy-airlines.com",
+  "is_admin": false
+}
+
+14:22:12.564 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 62
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "#(name)",
+  "email": "#(email)",
+  "password": "#(password)"
+}
+
+
+14:22:13.347 [main]  DEBUG com.intuit.karate - response time in milliseconds: 783
+1 < 400
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 24
+1 < Etag: W/"18-928jOLijreS3ro9mYfVt0IU4k/0"
+1 < Date: Tue, 24 May 2022 17:22:13 GMT
+1 < Via: 1.1 vegur
+{
+  "error": "Bad request."
+}
+
+14:22:13.929 [main]  INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) criarUsuario.feature
+14:23:36.480 [main]  INFO  com.intuit.karate - Karate version: 1.1.0
+14:23:36.643 [main]  DEBUG com.intuit.karate.Suite - [config] karate-config.js
+14:23:36.644 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1653413016644
+14:23:37.509 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 153
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "97d32e2c-25a9-439a-9799-7edbc2550e4duser",
+  "email": "d58b2237-f825-40be-8b39-811224a913d6@academy-airlines.com",
+  "password": "1653413017299academy"
+}
+
+
+14:23:39.049 [main]  DEBUG com.intuit.karate - response time in milliseconds: 1537
+1 < 201
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 180
+1 < Etag: W/"b4-9tbM9UWh3kS9PYkqHy5WXjKG6MY"
+1 < Date: Tue, 24 May 2022 17:23:38 GMT
+1 < Via: 1.1 vegur
+{
+  "id": "4386e367-77c7-4070-b3b8-43c8c2b619a5",
+  "name": "97d32e2c-25a9-439a-9799-7edbc2550e4duser",
+  "email": "d58b2237-f825-40be-8b39-811224a913d6@academy-airlines.com",
+  "is_admin": false
+}
+
+14:23:39.072 [main]  INFO  com.intuit.karate - [print] {
+  "name": "97d32e2c-25a9-439a-9799-7edbc2550e4duser",
+  "email": "d58b2237-f825-40be-8b39-811224a913d6@academy-airlines.com",
+  "password": "1653413017299academy",
+  "id": "#(id)",
+  "is_admin": "#(isAdmin)"
+}
+ 
+14:23:39.089 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 62
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "#(name)",
+  "email": "#(email)",
+  "password": "#(password)"
+}
+
+
+14:23:39.789 [main]  DEBUG com.intuit.karate - response time in milliseconds: 698
+1 < 400
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 24
+1 < Etag: W/"18-928jOLijreS3ro9mYfVt0IU4k/0"
+1 < Date: Tue, 24 May 2022 17:23:39 GMT
+1 < Via: 1.1 vegur
+{
+  "error": "Bad request."
+}
+
+14:23:39.794 [main]  INFO  com.intuit.karate - [print] {
+  "name": "#(name)",
+  "email": "#(email)",
+  "password": "#(password)",
+  "id": "#(id)",
+  "is_admin": "#(isAdmin)"
+}
+ 
+14:23:40.305 [main]  INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) criarUsuario.feature
+14:24:59.928 [main]  INFO  com.intuit.karate - Karate version: 1.1.0
+14:25:00.144 [main]  DEBUG com.intuit.karate.Suite - [config] karate-config.js
+14:25:00.145 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1653413100145
+14:25:01.026 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 153
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "d7d1b33d-b438-4694-a1ef-ff61e5113fa3user",
+  "email": "d141f924-c02b-4f21-ab58-2f88ec396c89@academy-airlines.com",
+  "password": "1653413100821academy"
+}
+
+
+14:25:02.310 [main]  DEBUG com.intuit.karate - response time in milliseconds: 1282
+1 < 201
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 180
+1 < Etag: W/"b4-3/uQ6yoLxreTcxnykQMDSLc6qZ0"
+1 < Date: Tue, 24 May 2022 17:25:02 GMT
+1 < Via: 1.1 vegur
+{
+  "id": "880c54cf-1562-44e7-a7c5-f57be9c0dc64",
+  "name": "d7d1b33d-b438-4694-a1ef-ff61e5113fa3user",
+  "email": "d141f924-c02b-4f21-ab58-2f88ec396c89@academy-airlines.com",
+  "is_admin": false
+}
+
+14:25:02.330 [main]  INFO  com.intuit.karate - [print] {
+  "name": "d7d1b33d-b438-4694-a1ef-ff61e5113fa3user",
+  "email": "d141f924-c02b-4f21-ab58-2f88ec396c89@academy-airlines.com",
+  "password": "1653413100821academy",
+  "id": "#(id)",
+  "is_admin": "#(isAdmin)"
+}
+ 
+14:25:02.343 [main]  INFO  com.intuit.karate - [print] {
+  "name": "#(name)",
+  "email": "#(email)",
+  "password": "#(password)",
+  "id": "#(id)",
+  "is_admin": "#(isAdmin)"
+}
+ 
+14:25:02.345 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 62
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "#(name)",
+  "email": "#(email)",
+  "password": "#(password)"
+}
+
+
+14:25:03.290 [main]  DEBUG com.intuit.karate - response time in milliseconds: 943
+1 < 400
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 24
+1 < Etag: W/"18-928jOLijreS3ro9mYfVt0IU4k/0"
+1 < Date: Tue, 24 May 2022 17:25:03 GMT
+1 < Via: 1.1 vegur
+{
+  "error": "Bad request."
+}
+
+14:25:03.750 [main]  INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) criarUsuario.feature
+14:26:44.757 [main]  INFO  com.intuit.karate - Karate version: 1.1.0
+14:26:44.933 [main]  DEBUG com.intuit.karate.Suite - [config] karate-config.js
+14:26:44.934 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1653413204934
+14:26:45.831 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 153
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "646b6cff-a327-4fdd-9616-523909dd1a71user",
+  "email": "eee234f1-b817-49e3-8992-56ea5a703ace@academy-airlines.com",
+  "password": "1653413205623academy"
+}
+
+
+14:26:47.348 [main]  DEBUG com.intuit.karate - response time in milliseconds: 1511
+1 < 201
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 180
+1 < Etag: W/"b4-sLXELRZqW16to9WSzJNtjDQkyxY"
+1 < Date: Tue, 24 May 2022 17:26:47 GMT
+1 < Via: 1.1 vegur
+{
+  "id": "96c993b2-a2ea-4436-836e-e83b0c7f4aa5",
+  "name": "646b6cff-a327-4fdd-9616-523909dd1a71user",
+  "email": "eee234f1-b817-49e3-8992-56ea5a703ace@academy-airlines.com",
+  "is_admin": false
+}
+
+14:26:47.386 [main]  INFO  com.intuit.karate - [print] {
+  "name": "646b6cff-a327-4fdd-9616-523909dd1a71user",
+  "email": "eee234f1-b817-49e3-8992-56ea5a703ace@academy-airlines.com",
+  "password": "1653413205623academy",
+  "id": "#(id)",
+  "is_admin": "#(isAdmin)"
+}
+ 
+14:26:47.406 [main]  INFO  c.intuit.karate.core.FeatureRuntime - hook.feature - call by tag at line 4: criarUsuario
+14:26:47.432 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 153
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "1a6afbb8-6cf6-4e0a-82df-97d80b2bfe44user",
+  "email": "84934cf9-5480-4ae4-9058-814428eeba5d@academy-airlines.com",
+  "password": "1653413207423academy"
+}
+
+
+14:26:48.383 [main]  DEBUG com.intuit.karate - response time in milliseconds: 950
+1 < 201
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 180
+1 < Etag: W/"b4-ZJ6CSnHXnt4I6QQio2paXL2wnl4"
+1 < Date: Tue, 24 May 2022 17:26:48 GMT
+1 < Via: 1.1 vegur
+{
+  "id": "fc53d415-1d39-4770-b50d-d7ed82f0e63e",
+  "name": "1a6afbb8-6cf6-4e0a-82df-97d80b2bfe44user",
+  "email": "84934cf9-5480-4ae4-9058-814428eeba5d@academy-airlines.com",
+  "is_admin": false
+}
+
+14:26:48.390 [main]  DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'payload' with new value: read("payloadUsuario.json")
+14:26:48.394 [main]  INFO  com.intuit.karate - [print] {
+  "name": "1a6afbb8-6cf6-4e0a-82df-97d80b2bfe44user",
+  "email": "84934cf9-5480-4ae4-9058-814428eeba5d@academy-airlines.com",
+  "password": "1653413207423academy",
+  "id": "fc53d415-1d39-4770-b50d-d7ed82f0e63e",
+  "is_admin": false
+}
+ 
+14:26:48.398 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 153
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "1a6afbb8-6cf6-4e0a-82df-97d80b2bfe44user",
+  "email": "84934cf9-5480-4ae4-9058-814428eeba5d@academy-airlines.com",
+  "password": "1653413207423academy"
+}
+
+
+14:26:49.143 [main]  DEBUG com.intuit.karate - response time in milliseconds: 744
+1 < 422
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 32
+1 < Etag: W/"20-R3itzQwmnR1Gj/otOwtMwb15SQQ"
+1 < Date: Tue, 24 May 2022 17:26:49 GMT
+1 < Via: 1.1 vegur
+{
+  "error": "User already exists."
+}
+
+14:26:49.147 [main]  ERROR com.intuit.karate - criarUsuario.feature:30
+Then status 400
+status code was: 422, expected: 400, response time in milliseconds: 744, url: https://lista-compras-api.herokuapp.com/api/v1/users, response: 
+{"error":"User already exists."}
+criarUsuario.feature:30
+14:26:49.671 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) criarUsuario.feature
+14:27:07.883 [main]  INFO  com.intuit.karate - Karate version: 1.1.0
+14:27:08.068 [main]  DEBUG com.intuit.karate.Suite - [config] karate-config.js
+14:27:08.069 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1653413228069
+14:27:09.028 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 153
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "9c0b22af-65c0-41dc-97b3-d958d959c244user",
+  "email": "51c94e84-077d-4b81-99e6-c9c6c183bfce@academy-airlines.com",
+  "password": "1653413228805academy"
+}
+
+
+14:27:10.584 [main]  DEBUG com.intuit.karate - response time in milliseconds: 1555
+1 < 201
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 180
+1 < Etag: W/"b4-A/jmYHg06V22M6DtGKf2MQMT5hM"
+1 < Date: Tue, 24 May 2022 17:27:10 GMT
+1 < Via: 1.1 vegur
+{
+  "id": "d5709607-8a6f-4de7-b65e-b86ee09b1792",
+  "name": "9c0b22af-65c0-41dc-97b3-d958d959c244user",
+  "email": "51c94e84-077d-4b81-99e6-c9c6c183bfce@academy-airlines.com",
+  "is_admin": false
+}
+
+14:27:10.605 [main]  INFO  com.intuit.karate - [print] {
+  "name": "9c0b22af-65c0-41dc-97b3-d958d959c244user",
+  "email": "51c94e84-077d-4b81-99e6-c9c6c183bfce@academy-airlines.com",
+  "password": "1653413228805academy",
+  "id": "#(id)",
+  "is_admin": "#(isAdmin)"
+}
+ 
+14:27:10.618 [main]  INFO  c.intuit.karate.core.FeatureRuntime - hook.feature - call by tag at line 4: criarUsuario
+14:27:10.632 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 153
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "3fd4e2d3-6ff0-4d74-915d-5d7be6ee99e9user",
+  "email": "a3885898-2a9b-4d59-b3a2-982a5ff9347b@academy-airlines.com",
+  "password": "1653413230625academy"
+}
+
+
+14:27:11.656 [main]  DEBUG com.intuit.karate - response time in milliseconds: 1023
+1 < 201
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 180
+1 < Etag: W/"b4-Aemdx0+qLD/JLfsY4/Z/vKDfF5Q"
+1 < Date: Tue, 24 May 2022 17:27:11 GMT
+1 < Via: 1.1 vegur
+{
+  "id": "ab1d5863-5b30-4f10-95ca-c5ee7945791a",
+  "name": "3fd4e2d3-6ff0-4d74-915d-5d7be6ee99e9user",
+  "email": "a3885898-2a9b-4d59-b3a2-982a5ff9347b@academy-airlines.com",
+  "is_admin": false
+}
+
+14:27:11.674 [main]  DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'payload' with new value: read("payloadUsuario.json")
+14:27:11.682 [main]  INFO  com.intuit.karate - [print] {
+  "name": "3fd4e2d3-6ff0-4d74-915d-5d7be6ee99e9user",
+  "email": "a3885898-2a9b-4d59-b3a2-982a5ff9347b@academy-airlines.com",
+  "password": "1653413230625academy",
+  "id": "ab1d5863-5b30-4f10-95ca-c5ee7945791a",
+  "is_admin": false
+}
+ 
+14:27:11.687 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 153
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "3fd4e2d3-6ff0-4d74-915d-5d7be6ee99e9user",
+  "email": "a3885898-2a9b-4d59-b3a2-982a5ff9347b@academy-airlines.com",
+  "password": "1653413230625academy"
+}
+
+
+14:27:12.618 [main]  DEBUG com.intuit.karate - response time in milliseconds: 929
+1 < 422
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 32
+1 < Etag: W/"20-R3itzQwmnR1Gj/otOwtMwb15SQQ"
+1 < Date: Tue, 24 May 2022 17:27:12 GMT
+1 < Via: 1.1 vegur
+{
+  "error": "User already exists."
+}
+
+14:27:13.195 [main]  INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) criarUsuario.feature
+14:27:53.608 [main]  INFO  com.intuit.karate - Karate version: 1.1.0
+14:27:53.762 [main]  DEBUG com.intuit.karate.Suite - [config] karate-config.js
+14:27:53.763 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1653413273763
+14:27:54.595 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 153
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "130b04cd-637a-437a-b1d2-d8f358bc5413user",
+  "email": "d0493dfd-d7ea-4b22-911e-ace72a3e44a8@academy-airlines.com",
+  "password": "1653413274405academy"
+}
+
+
+14:27:55.932 [main]  DEBUG com.intuit.karate - response time in milliseconds: 1330
+1 < 201
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 180
+1 < Etag: W/"b4-gbzkS7DMSkBygX/pIgJmdlMxpQc"
+1 < Date: Tue, 24 May 2022 17:27:55 GMT
+1 < Via: 1.1 vegur
+{
+  "id": "d333e120-91e9-4706-a2f0-94c47e3165b5",
+  "name": "130b04cd-637a-437a-b1d2-d8f358bc5413user",
+  "email": "d0493dfd-d7ea-4b22-911e-ace72a3e44a8@academy-airlines.com",
+  "is_admin": false
+}
+
+14:27:55.970 [main]  INFO  c.intuit.karate.core.FeatureRuntime - hook.feature - call by tag at line 4: criarUsuario
+14:27:55.988 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 153
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "e4a71f8d-1d7a-4cfd-aef6-21c2a5420351user",
+  "email": "a0027b10-3fb1-4d61-b90f-53128ea0e678@academy-airlines.com",
+  "password": "1653413275980academy"
+}
+
+
+14:27:56.971 [main]  DEBUG com.intuit.karate - response time in milliseconds: 982
+1 < 201
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 180
+1 < Etag: W/"b4-OqMhiKevQ9seNpp5NuYGkt0Hkyk"
+1 < Date: Tue, 24 May 2022 17:27:56 GMT
+1 < Via: 1.1 vegur
+{
+  "id": "8f19ea17-e7af-4acf-a62c-1f08c6179397",
+  "name": "e4a71f8d-1d7a-4cfd-aef6-21c2a5420351user",
+  "email": "a0027b10-3fb1-4d61-b90f-53128ea0e678@academy-airlines.com",
+  "is_admin": false
+}
+
+14:27:56.977 [main]  DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'payload' with new value: read("payloadUsuario.json")
+14:27:56.982 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 153
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "e4a71f8d-1d7a-4cfd-aef6-21c2a5420351user",
+  "email": "a0027b10-3fb1-4d61-b90f-53128ea0e678@academy-airlines.com",
+  "password": "1653413275980academy"
+}
+
+
+14:27:57.779 [main]  DEBUG com.intuit.karate - response time in milliseconds: 797
+1 < 422
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 32
+1 < Etag: W/"20-R3itzQwmnR1Gj/otOwtMwb15SQQ"
+1 < Date: Tue, 24 May 2022 17:27:57 GMT
+1 < Via: 1.1 vegur
+{
+  "error": "User already exists."
+}
+
+14:27:58.297 [main]  INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) criarUsuario.feature
+14:40:07.936 [main]  INFO  com.intuit.karate - Karate version: 1.1.0
+14:40:08.101 [main]  DEBUG com.intuit.karate.Suite - [config] karate-config.js
+14:40:08.102 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1653414008102
+14:40:08.984 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 153
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "0c4f8c27-5e17-4be8-8fec-b22e70ba3efbuser",
+  "email": "f32dd4fb-50ef-4c7f-a2eb-b1f275a60559@academy-airlines.com",
+  "password": "1653414008782academy"
+}
+
+
+14:40:12.208 [main]  DEBUG com.intuit.karate - response time in milliseconds: 3219
+1 < 201
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 180
+1 < Etag: W/"b4-MzgUmvHCLsixpNBZ1oWE05Y3uCM"
+1 < Date: Tue, 24 May 2022 17:40:11 GMT
+1 < Via: 1.1 vegur
+{
+  "id": "1b700b8f-634b-45d8-b7ca-31cf965ebaf3",
+  "name": "0c4f8c27-5e17-4be8-8fec-b22e70ba3efbuser",
+  "email": "f32dd4fb-50ef-4c7f-a2eb-b1f275a60559@academy-airlines.com",
+  "is_admin": false
+}
+
+14:40:12.258 [main]  INFO  c.intuit.karate.core.FeatureRuntime - hook.feature - call by tag at line 4: criarUsuario
+14:40:12.282 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 153
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "6d27f0c9-e7d7-4eb2-bea4-209143935c37user",
+  "email": "415b281a-45df-4f39-b9fb-7030fc085e06@academy-airlines.com",
+  "password": "1653414012270academy"
+}
+
+
+14:40:15.650 [main]  DEBUG com.intuit.karate - response time in milliseconds: 3367
+1 < 201
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 180
+1 < Etag: W/"b4-bKPJbVMi6EpQ56oE12ulW6CmAjE"
+1 < Date: Tue, 24 May 2022 17:40:14 GMT
+1 < Via: 1.1 vegur
+{
+  "id": "9a8b16a6-4587-4ec1-962a-654841e66a91",
+  "name": "6d27f0c9-e7d7-4eb2-bea4-209143935c37user",
+  "email": "415b281a-45df-4f39-b9fb-7030fc085e06@academy-airlines.com",
+  "is_admin": false
+}
+
+14:40:15.657 [main]  DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'payload' with new value: read("payloadUsuario.json")
+14:40:15.663 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 153
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "6d27f0c9-e7d7-4eb2-bea4-209143935c37user",
+  "email": "415b281a-45df-4f39-b9fb-7030fc085e06@academy-airlines.com",
+  "password": "1653414012270academy"
+}
+
+
+14:40:18.181 [main]  DEBUG com.intuit.karate - response time in milliseconds: 2517
+1 < 422
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 32
+1 < Etag: W/"20-R3itzQwmnR1Gj/otOwtMwb15SQQ"
+1 < Date: Tue, 24 May 2022 17:40:17 GMT
+1 < Via: 1.1 vegur
+{
+  "error": "User already exists."
+}
+
+14:40:18.214 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 196
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "eb73c614-9693-4567-8864-85e6e7c8050707cf98a4-8070-4f74-bd40-43bb039e569b07cf98a4-8070-4f74-bd40-43bb0",
+  "email": "964df4ff-45d3-4d58-9a92-864d84e1b133@academy.com",
+  "password": "#(password)"
+}
+
+
+14:40:21.205 [main]  DEBUG com.intuit.karate - response time in milliseconds: 2983
+1 < 201
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 232
+1 < Etag: W/"e8-+JzgVZXG5QCZdeFL6mur6m5HJjQ"
+1 < Date: Tue, 24 May 2022 17:40:20 GMT
+1 < Via: 1.1 vegur
+{
+  "id": "c77965dc-8987-4c04-8527-710658ad3ed5",
+  "name": "eb73c614-9693-4567-8864-85e6e7c8050707cf98a4-8070-4f74-bd40-43bb039e569b07cf98a4-8070-4f74-bd40-43bb0",
+  "email": "964df4ff-45d3-4d58-9a92-864d84e1b133@academy.com",
+  "is_admin": false
+}
+
+14:40:21.211 [main]  ERROR com.intuit.karate - criarUsuario.feature:40
+Then status 400
+status code was: 201, expected: 400, response time in milliseconds: 2983, url: https://lista-compras-api.herokuapp.com/api/v1/users, response: 
+{"id":"c77965dc-8987-4c04-8527-710658ad3ed5","name":"eb73c614-9693-4567-8864-85e6e7c8050707cf98a4-8070-4f74-bd40-43bb039e569b07cf98a4-8070-4f74-bd40-43bb0","email":"964df4ff-45d3-4d58-9a92-864d84e1b133@academy.com","is_admin":false}
+criarUsuario.feature:40
+14:40:21.248 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 209
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "bd665619-f068-4cb3-b85e-3bc3483ab43e07cf98a4-8070-4f74-bd40-43bb039e569b07cf98a4-8070-4f74-bd40-43bb0",
+  "email": "dc3cb15a-bbf0-458b-8201-18d50c00bd1f094e3591c48bd@academy.com",
+  "password": "#(password)"
+}
+
+
+14:40:23.366 [main]  DEBUG com.intuit.karate - response time in milliseconds: 2116
+1 < 201
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 245
+1 < Etag: W/"f5-LCcL0IxSK6mIWof0aqBwK5EdVcw"
+1 < Date: Tue, 24 May 2022 17:40:22 GMT
+1 < Via: 1.1 vegur
+{
+  "id": "6b6b1576-dd0f-42ac-a365-c1a3f75e60e8",
+  "name": "bd665619-f068-4cb3-b85e-3bc3483ab43e07cf98a4-8070-4f74-bd40-43bb039e569b07cf98a4-8070-4f74-bd40-43bb0",
+  "email": "dc3cb15a-bbf0-458b-8201-18d50c00bd1f094e3591c48bd@academy.com",
+  "is_admin": false
+}
+
+14:40:23.370 [main]  ERROR com.intuit.karate - criarUsuario.feature:51
+Then status 400
+status code was: 201, expected: 400, response time in milliseconds: 2116, url: https://lista-compras-api.herokuapp.com/api/v1/users, response: 
+{"id":"6b6b1576-dd0f-42ac-a365-c1a3f75e60e8","name":"bd665619-f068-4cb3-b85e-3bc3483ab43e07cf98a4-8070-4f74-bd40-43bb039e569b07cf98a4-8070-4f74-bd40-43bb0","email":"dc3cb15a-bbf0-458b-8201-18d50c00bd1f094e3591c48bd@academy.com","is_admin":false}
+criarUsuario.feature:51
+14:40:23.972 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) criarUsuario.feature
+14:41:52.367 [main]  INFO  com.intuit.karate - Karate version: 1.1.0
+14:41:52.543 [main]  DEBUG com.intuit.karate.Suite - [config] karate-config.js
+14:41:52.544 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1653414112544
+14:41:53.451 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 153
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "8106d63e-539d-4d56-8567-fe24b9d990f3user",
+  "email": "77af2f60-aafb-4bc6-a817-d622af345c10@academy-airlines.com",
+  "password": "1653414113234academy"
+}
+
+
+14:41:55.547 [main]  DEBUG com.intuit.karate - response time in milliseconds: 2092
+1 < 201
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 180
+1 < Etag: W/"b4-YEJjNgUrdehtmy1HORLGi7NTzco"
+1 < Date: Tue, 24 May 2022 17:41:55 GMT
+1 < Via: 1.1 vegur
+{
+  "id": "96c05c04-cf00-4c03-8fe3-6cdd5acd3236",
+  "name": "8106d63e-539d-4d56-8567-fe24b9d990f3user",
+  "email": "77af2f60-aafb-4bc6-a817-d622af345c10@academy-airlines.com",
+  "is_admin": false
+}
+
+14:41:55.595 [main]  INFO  c.intuit.karate.core.FeatureRuntime - hook.feature - call by tag at line 4: criarUsuario
+14:41:55.615 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 153
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "2754d4c7-78ab-47f9-80fa-c2043d1a270duser",
+  "email": "0ec4fb63-2554-4093-814e-5fc9130a1c34@academy-airlines.com",
+  "password": "1653414115605academy"
+}
+
+
+14:41:56.593 [main]  DEBUG com.intuit.karate - response time in milliseconds: 974
+1 < 201
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 180
+1 < Etag: W/"b4-dekTnvWpl6JFugcyUPsCO8BlIrY"
+1 < Date: Tue, 24 May 2022 17:41:56 GMT
+1 < Via: 1.1 vegur
+{
+  "id": "11a75789-adec-4f64-9303-c265a8a602cf",
+  "name": "2754d4c7-78ab-47f9-80fa-c2043d1a270duser",
+  "email": "0ec4fb63-2554-4093-814e-5fc9130a1c34@academy-airlines.com",
+  "is_admin": false
+}
+
+14:41:56.609 [main]  DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'payload' with new value: read("payloadUsuario.json")
+14:41:56.621 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 153
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "2754d4c7-78ab-47f9-80fa-c2043d1a270duser",
+  "email": "0ec4fb63-2554-4093-814e-5fc9130a1c34@academy-airlines.com",
+  "password": "1653414115605academy"
+}
+
+
+14:41:57.838 [main]  DEBUG com.intuit.karate - response time in milliseconds: 1217
+1 < 422
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 32
+1 < Etag: W/"20-R3itzQwmnR1Gj/otOwtMwb15SQQ"
+1 < Date: Tue, 24 May 2022 17:41:57 GMT
+1 < Via: 1.1 vegur
+{
+  "error": "User already exists."
+}
+
+14:41:57.889 [main]  INFO  com.intuit.karate - [print] {
+  "name": "66509eb4-899b-42bc-a1c2-e89900fa14cf07cf98a4-8070-4f74-bd40-43bb039e569b07cf98a4-8070-4f74-bd40-43bb0",
+  "email": "b4977bab-ac23-43ba-a248-bc634a472c73@academy.com",
+  "password": "#(password)",
+  "id": "#(id)",
+  "is_admin": "#(isAdmin)"
+}
+ 
+14:41:57.894 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 196
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "66509eb4-899b-42bc-a1c2-e89900fa14cf07cf98a4-8070-4f74-bd40-43bb039e569b07cf98a4-8070-4f74-bd40-43bb0",
+  "email": "b4977bab-ac23-43ba-a248-bc634a472c73@academy.com",
+  "password": "#(password)"
+}
+
+
+14:41:58.714 [main]  DEBUG com.intuit.karate - response time in milliseconds: 819
+1 < 201
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 232
+1 < Etag: W/"e8-yQZK6Q2+7YcZymZV4H2nVOlP050"
+1 < Date: Tue, 24 May 2022 17:41:58 GMT
+1 < Via: 1.1 vegur
+{
+  "id": "6723fe85-c13f-4633-9c35-336f182d1891",
+  "name": "66509eb4-899b-42bc-a1c2-e89900fa14cf07cf98a4-8070-4f74-bd40-43bb039e569b07cf98a4-8070-4f74-bd40-43bb0",
+  "email": "b4977bab-ac23-43ba-a248-bc634a472c73@academy.com",
+  "is_admin": false
+}
+
+14:41:58.717 [main]  ERROR com.intuit.karate - criarUsuario.feature:41
+Then status 400
+status code was: 201, expected: 400, response time in milliseconds: 819, url: https://lista-compras-api.herokuapp.com/api/v1/users, response: 
+{"id":"6723fe85-c13f-4633-9c35-336f182d1891","name":"66509eb4-899b-42bc-a1c2-e89900fa14cf07cf98a4-8070-4f74-bd40-43bb039e569b07cf98a4-8070-4f74-bd40-43bb0","email":"b4977bab-ac23-43ba-a248-bc634a472c73@academy.com","is_admin":false}
+criarUsuario.feature:41
+14:41:58.744 [main]  INFO  com.intuit.karate - [print] {
+  "name": "f1364830-889d-4130-992b-f0bcfaf2b55407cf98a4-8070-4f74-bd40-43bb039e569b07cf98a4-8070-4f74-bd40-43bb0",
+  "email": "b7cc8d10-fe98-4e3a-abe4-e4759b4e697d094e3591c48bd@academy.com",
+  "password": "#(password)",
+  "id": "#(id)",
+  "is_admin": "#(isAdmin)"
+}
+ 
+14:41:58.751 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 209
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "f1364830-889d-4130-992b-f0bcfaf2b55407cf98a4-8070-4f74-bd40-43bb039e569b07cf98a4-8070-4f74-bd40-43bb0",
+  "email": "b7cc8d10-fe98-4e3a-abe4-e4759b4e697d094e3591c48bd@academy.com",
+  "password": "#(password)"
+}
+
+
+14:42:00.156 [main]  DEBUG com.intuit.karate - response time in milliseconds: 1404
+1 < 201
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 245
+1 < Etag: W/"f5-a6vQX3FIN086n+QEXXXuydz6SCM"
+1 < Date: Tue, 24 May 2022 17:42:00 GMT
+1 < Via: 1.1 vegur
+{
+  "id": "552199ab-21dd-46d3-b09c-b3c6dc49269e",
+  "name": "f1364830-889d-4130-992b-f0bcfaf2b55407cf98a4-8070-4f74-bd40-43bb039e569b07cf98a4-8070-4f74-bd40-43bb0",
+  "email": "b7cc8d10-fe98-4e3a-abe4-e4759b4e697d094e3591c48bd@academy.com",
+  "is_admin": false
+}
+
+14:42:00.162 [main]  ERROR com.intuit.karate - criarUsuario.feature:53
+Then status 400
+status code was: 201, expected: 400, response time in milliseconds: 1404, url: https://lista-compras-api.herokuapp.com/api/v1/users, response: 
+{"id":"552199ab-21dd-46d3-b09c-b3c6dc49269e","name":"f1364830-889d-4130-992b-f0bcfaf2b55407cf98a4-8070-4f74-bd40-43bb039e569b07cf98a4-8070-4f74-bd40-43bb0","email":"b7cc8d10-fe98-4e3a-abe4-e4759b4e697d094e3591c48bd@academy.com","is_admin":false}
+criarUsuario.feature:53
+14:42:00.880 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) criarUsuario.feature
+15:24:47.563 [main]  INFO  com.intuit.karate - Karate version: 1.1.0
+15:24:47.837 [main]  DEBUG com.intuit.karate.Suite - [config] karate-config.js
+15:24:47.868 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1653416687838
+15:24:49.409 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 153
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "33186e63-9ba0-4912-ab39-b6490037a253user",
+  "email": "60f86325-02d9-49ce-8f17-95041be41426@academy-airlines.com",
+  "password": "1653416689150academy"
+}
+
+
+15:24:50.671 [main]  DEBUG com.intuit.karate - response time in milliseconds: 1259
+1 < 201
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 180
+1 < Etag: W/"b4-U+GkkAnXkItpGOKLJYnZNPKmrUI"
+1 < Date: Tue, 24 May 2022 18:24:50 GMT
+1 < Via: 1.1 vegur
+{
+  "id": "8adc24f9-db1b-4afd-bd27-b97b03688f6e",
+  "name": "33186e63-9ba0-4912-ab39-b6490037a253user",
+  "email": "60f86325-02d9-49ce-8f17-95041be41426@academy-airlines.com",
+  "is_admin": false
+}
+
+15:24:50.701 [main]  INFO  c.intuit.karate.core.FeatureRuntime - hook.feature - call by tag at line 4: criarUsuario
+15:24:50.723 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 153
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "9a83b16f-ec2e-401e-81f4-3df0b336ac6auser",
+  "email": "2ed71305-0709-4990-8d05-fa8dd4f87670@academy-airlines.com",
+  "password": "1653416690713academy"
+}
+
+
+15:24:52.368 [main]  DEBUG com.intuit.karate - response time in milliseconds: 1645
+1 < 201
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 180
+1 < Etag: W/"b4-+2BSoCm9xIUkE+yB4S8rUyTFPZ8"
+1 < Date: Tue, 24 May 2022 18:24:52 GMT
+1 < Via: 1.1 vegur
+{
+  "id": "48899c01-06ae-40f1-b85a-da9f76f44dfb",
+  "name": "9a83b16f-ec2e-401e-81f4-3df0b336ac6auser",
+  "email": "2ed71305-0709-4990-8d05-fa8dd4f87670@academy-airlines.com",
+  "is_admin": false
+}
+
+15:24:52.375 [main]  DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'payload' with new value: read("payloadUsuario.json")
+15:24:52.381 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 153
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "9a83b16f-ec2e-401e-81f4-3df0b336ac6auser",
+  "email": "2ed71305-0709-4990-8d05-fa8dd4f87670@academy-airlines.com",
+  "password": "1653416690713academy"
+}
+
+
+15:24:53.162 [main]  DEBUG com.intuit.karate - response time in milliseconds: 781
+1 < 422
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 32
+1 < Etag: W/"20-R3itzQwmnR1Gj/otOwtMwb15SQQ"
+1 < Date: Tue, 24 May 2022 18:24:53 GMT
+1 < Via: 1.1 vegur
+{
+  "error": "User already exists."
+}
+
+15:24:53.203 [main]  INFO  com.intuit.karate - [print] {
+  "name": "da3e29ee-09c6-4942-848e-7c623bbcffcb07cf98a4-8070-4f74-bd40-43bb039e569b07cf98a4-8070-4f74-bd40-43bb0",
+  "email": "3c657000-4660-4da8-b7e9-46c6c604ab37@academy.com",
+  "password": "#(password)",
+  "id": "#(id)",
+  "is_admin": "#(isAdmin)"
+}
+ 
+15:24:53.208 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 196
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "da3e29ee-09c6-4942-848e-7c623bbcffcb07cf98a4-8070-4f74-bd40-43bb039e569b07cf98a4-8070-4f74-bd40-43bb0",
+  "email": "3c657000-4660-4da8-b7e9-46c6c604ab37@academy.com",
+  "password": "#(password)"
+}
+
+
+15:24:54.211 [main]  DEBUG com.intuit.karate - response time in milliseconds: 1003
+1 < 201
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 232
+1 < Etag: W/"e8-5GzSu4pPimUlMX7Vhtqj7TkW6/s"
+1 < Date: Tue, 24 May 2022 18:24:54 GMT
+1 < Via: 1.1 vegur
+{
+  "id": "ed81a9f0-d077-460c-aaff-eb780675870b",
+  "name": "da3e29ee-09c6-4942-848e-7c623bbcffcb07cf98a4-8070-4f74-bd40-43bb039e569b07cf98a4-8070-4f74-bd40-43bb0",
+  "email": "3c657000-4660-4da8-b7e9-46c6c604ab37@academy.com",
+  "is_admin": false
+}
+
+15:24:54.214 [main]  ERROR com.intuit.karate - criarUsuario.feature:41
+Then status 400
+status code was: 201, expected: 400, response time in milliseconds: 1003, url: https://lista-compras-api.herokuapp.com/api/v1/users, response: 
+{"id":"ed81a9f0-d077-460c-aaff-eb780675870b","name":"da3e29ee-09c6-4942-848e-7c623bbcffcb07cf98a4-8070-4f74-bd40-43bb039e569b07cf98a4-8070-4f74-bd40-43bb0","email":"3c657000-4660-4da8-b7e9-46c6c604ab37@academy.com","is_admin":false}
+criarUsuario.feature:41
+15:24:54.230 [main]  INFO  com.intuit.karate - [print] {
+  "name": "bd54989e-52b0-4d6c-a6ba-dce15dc95ec907cf98a4-8070-4f74-bd40-43bb039e569b07cf98a4-8070-4f74-bd40-43bb0",
+  "email": "c5d1f31c-a77b-4fe8-90dc-2b352908a810094e3591c48bd@academy.com",
+  "password": "#(password)",
+  "id": "#(id)",
+  "is_admin": "#(isAdmin)"
+}
+ 
+15:24:54.235 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 209
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "bd54989e-52b0-4d6c-a6ba-dce15dc95ec907cf98a4-8070-4f74-bd40-43bb039e569b07cf98a4-8070-4f74-bd40-43bb0",
+  "email": "c5d1f31c-a77b-4fe8-90dc-2b352908a810094e3591c48bd@academy.com",
+  "password": "#(password)"
+}
+
+
+15:24:55.238 [main]  DEBUG com.intuit.karate - response time in milliseconds: 1002
+1 < 201
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 245
+1 < Etag: W/"f5-PUL8Y1F7guh1iGPcGGCIBX2cq+o"
+1 < Date: Tue, 24 May 2022 18:24:55 GMT
+1 < Via: 1.1 vegur
+{
+  "id": "32e82bbb-9cfb-422f-ba69-8c7beab6b7b0",
+  "name": "bd54989e-52b0-4d6c-a6ba-dce15dc95ec907cf98a4-8070-4f74-bd40-43bb039e569b07cf98a4-8070-4f74-bd40-43bb0",
+  "email": "c5d1f31c-a77b-4fe8-90dc-2b352908a810094e3591c48bd@academy.com",
+  "is_admin": false
+}
+
+15:24:55.242 [main]  ERROR com.intuit.karate - criarUsuario.feature:53
+Then status 400
+status code was: 201, expected: 400, response time in milliseconds: 1002, url: https://lista-compras-api.herokuapp.com/api/v1/users, response: 
+{"id":"32e82bbb-9cfb-422f-ba69-8c7beab6b7b0","name":"bd54989e-52b0-4d6c-a6ba-dce15dc95ec907cf98a4-8070-4f74-bd40-43bb039e569b07cf98a4-8070-4f74-bd40-43bb0","email":"c5d1f31c-a77b-4fe8-90dc-2b352908a810094e3591c48bd@academy.com","is_admin":false}
+criarUsuario.feature:53
+15:24:55.299 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 96
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "b180dcb5-54be-436c-9db8-897de009e992user",
+  "email": {
+  },
+  "password": "1653416695254academy"
+}
+
+
+15:24:56.195 [main]  DEBUG com.intuit.karate - response time in milliseconds: 895
+1 < 400
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 24
+1 < Etag: W/"18-928jOLijreS3ro9mYfVt0IU4k/0"
+1 < Date: Tue, 24 May 2022 18:24:56 GMT
+1 < Via: 1.1 vegur
+{
+  "error": "Bad request."
+}
+
+15:24:57.016 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) criarUsuario.feature
+15:25:52.754 [main]  INFO  com.intuit.karate - Karate version: 1.1.0
+15:25:52.909 [main]  DEBUG com.intuit.karate.Suite - [config] karate-config.js
+15:25:52.910 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1653416752910
+15:25:53.829 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 153
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "1c60d8b2-9cb2-47da-a496-8a534513953buser",
+  "email": "55cf014b-73b8-4c0a-a465-143a2dc94311@academy-airlines.com",
+  "password": "1653416753619academy"
+}
+
+
+15:25:55.170 [main]  DEBUG com.intuit.karate - response time in milliseconds: 1334
+1 < 201
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 180
+1 < Etag: W/"b4-xYb7wlRERfwTwgk2tn41ZkIgQos"
+1 < Date: Tue, 24 May 2022 18:25:55 GMT
+1 < Via: 1.1 vegur
+{
+  "id": "10a7a554-7ee8-4678-aacf-afee0853d56d",
+  "name": "1c60d8b2-9cb2-47da-a496-8a534513953buser",
+  "email": "55cf014b-73b8-4c0a-a465-143a2dc94311@academy-airlines.com",
+  "is_admin": false
+}
+
+15:25:55.206 [main]  INFO  c.intuit.karate.core.FeatureRuntime - hook.feature - call by tag at line 4: criarUsuario
+15:25:55.220 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 153
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "01ef9760-0715-4a3f-b09d-d5c404ad09d3user",
+  "email": "64592bb8-7d38-438b-bf8c-542b98f44ade@academy-airlines.com",
+  "password": "1653416755212academy"
+}
+
+
+15:25:56.176 [main]  DEBUG com.intuit.karate - response time in milliseconds: 955
+1 < 201
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 180
+1 < Etag: W/"b4-7ZdItAYfW19STLbmuhU/J8BiIQc"
+1 < Date: Tue, 24 May 2022 18:25:56 GMT
+1 < Via: 1.1 vegur
+{
+  "id": "8fc681f9-e844-4e9e-bd1b-c3c08cdc3698",
+  "name": "01ef9760-0715-4a3f-b09d-d5c404ad09d3user",
+  "email": "64592bb8-7d38-438b-bf8c-542b98f44ade@academy-airlines.com",
+  "is_admin": false
+}
+
+15:25:56.187 [main]  DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'payload' with new value: read("payloadUsuario.json")
+15:25:56.194 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 153
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "01ef9760-0715-4a3f-b09d-d5c404ad09d3user",
+  "email": "64592bb8-7d38-438b-bf8c-542b98f44ade@academy-airlines.com",
+  "password": "1653416755212academy"
+}
+
+
+15:25:57.165 [main]  DEBUG com.intuit.karate - response time in milliseconds: 971
+1 < 422
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 32
+1 < Etag: W/"20-R3itzQwmnR1Gj/otOwtMwb15SQQ"
+1 < Date: Tue, 24 May 2022 18:25:57 GMT
+1 < Via: 1.1 vegur
+{
+  "error": "User already exists."
+}
+
+15:25:57.190 [main]  INFO  com.intuit.karate - [print] {
+  "name": "512a6df3-d9e9-4c36-a6f5-7ba9bbfe76dc07cf98a4-8070-4f74-bd40-43bb039e569b07cf98a4-8070-4f74-bd40-43bb0",
+  "email": "e07be469-3938-408e-a026-8a06dc99f39e@academy.com",
+  "password": "#(password)",
+  "id": "#(id)",
+  "is_admin": "#(isAdmin)"
+}
+ 
+15:25:57.193 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 196
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "512a6df3-d9e9-4c36-a6f5-7ba9bbfe76dc07cf98a4-8070-4f74-bd40-43bb039e569b07cf98a4-8070-4f74-bd40-43bb0",
+  "email": "e07be469-3938-408e-a026-8a06dc99f39e@academy.com",
+  "password": "#(password)"
+}
+
+
+15:25:58.013 [main]  DEBUG com.intuit.karate - response time in milliseconds: 820
+1 < 201
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 232
+1 < Etag: W/"e8-hloTa311KkvYVEC9ZUbdjXHAAKE"
+1 < Date: Tue, 24 May 2022 18:25:57 GMT
+1 < Via: 1.1 vegur
+{
+  "id": "71414392-da4e-4d90-aa53-2b88ea3c024d",
+  "name": "512a6df3-d9e9-4c36-a6f5-7ba9bbfe76dc07cf98a4-8070-4f74-bd40-43bb039e569b07cf98a4-8070-4f74-bd40-43bb0",
+  "email": "e07be469-3938-408e-a026-8a06dc99f39e@academy.com",
+  "is_admin": false
+}
+
+15:25:58.017 [main]  ERROR com.intuit.karate - criarUsuario.feature:41
+Then status 400
+status code was: 201, expected: 400, response time in milliseconds: 820, url: https://lista-compras-api.herokuapp.com/api/v1/users, response: 
+{"id":"71414392-da4e-4d90-aa53-2b88ea3c024d","name":"512a6df3-d9e9-4c36-a6f5-7ba9bbfe76dc07cf98a4-8070-4f74-bd40-43bb039e569b07cf98a4-8070-4f74-bd40-43bb0","email":"e07be469-3938-408e-a026-8a06dc99f39e@academy.com","is_admin":false}
+criarUsuario.feature:41
+15:25:58.031 [main]  INFO  com.intuit.karate - [print] {
+  "name": "a6625ea1-9ffd-498a-9c19-53eb3a42630d07cf98a4-8070-4f74-bd40-43bb039e569b07cf98a4-8070-4f74-bd40-43bb0",
+  "email": "37c6d759-3a2c-4a09-8224-f59e39540818094e3591c48bd@academy.com",
+  "password": "#(password)",
+  "id": "#(id)",
+  "is_admin": "#(isAdmin)"
+}
+ 
+15:25:58.036 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 209
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "a6625ea1-9ffd-498a-9c19-53eb3a42630d07cf98a4-8070-4f74-bd40-43bb039e569b07cf98a4-8070-4f74-bd40-43bb0",
+  "email": "37c6d759-3a2c-4a09-8224-f59e39540818094e3591c48bd@academy.com",
+  "password": "#(password)"
+}
+
+
+15:25:59.041 [main]  DEBUG com.intuit.karate - response time in milliseconds: 1004
+1 < 201
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 245
+1 < Etag: W/"f5-P8xm3f1pLVHfpZEYc7Xcvi+HmPs"
+1 < Date: Tue, 24 May 2022 18:25:58 GMT
+1 < Via: 1.1 vegur
+{
+  "id": "a9a196b1-eb4d-4e80-af8b-e38bf788eb4d",
+  "name": "a6625ea1-9ffd-498a-9c19-53eb3a42630d07cf98a4-8070-4f74-bd40-43bb039e569b07cf98a4-8070-4f74-bd40-43bb0",
+  "email": "37c6d759-3a2c-4a09-8224-f59e39540818094e3591c48bd@academy.com",
+  "is_admin": false
+}
+
+15:25:59.043 [main]  ERROR com.intuit.karate - criarUsuario.feature:53
+Then status 400
+status code was: 201, expected: 400, response time in milliseconds: 1004, url: https://lista-compras-api.herokuapp.com/api/v1/users, response: 
+{"id":"a9a196b1-eb4d-4e80-af8b-e38bf788eb4d","name":"a6625ea1-9ffd-498a-9c19-53eb3a42630d07cf98a4-8070-4f74-bd40-43bb039e569b07cf98a4-8070-4f74-bd40-43bb0","email":"37c6d759-3a2c-4a09-8224-f59e39540818094e3591c48bd@academy.com","is_admin":false}
+criarUsuario.feature:53
+15:25:59.096 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 96
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "14af2f5f-ded7-4a22-ab52-7a58ac8f34f4user",
+  "email": {
+  },
+  "password": "1653416759055academy"
+}
+
+
+15:25:59.739 [main]  DEBUG com.intuit.karate - response time in milliseconds: 643
+1 < 400
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 24
+1 < Etag: W/"18-928jOLijreS3ro9mYfVt0IU4k/0"
+1 < Date: Tue, 24 May 2022 18:25:59 GMT
+1 < Via: 1.1 vegur
+{
+  "error": "Bad request."
+}
+
+15:26:00.766 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) criarUsuario.feature
+15:29:32.581 [main]  INFO  com.intuit.karate - Karate version: 1.1.0
+15:29:32.734 [main]  DEBUG com.intuit.karate.Suite - [config] karate-config.js
+15:29:32.735 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1653416972735
+15:29:33.620 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 153
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "0821b6a8-01e0-4f1b-abfd-a437b033614auser",
+  "email": "a115955d-66e5-4514-92b4-5857b5df4822@academy-airlines.com",
+  "password": "1653416973411academy"
+}
+
+
+15:29:35.132 [main]  DEBUG com.intuit.karate - response time in milliseconds: 1506
+1 < 201
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 180
+1 < Etag: W/"b4-3rMqT+QSU2kLBInirT/V8VVrFTY"
+1 < Date: Tue, 24 May 2022 18:29:35 GMT
+1 < Via: 1.1 vegur
+{
+  "id": "745c447e-8a7b-4f3b-86c9-52b6645b513e",
+  "name": "0821b6a8-01e0-4f1b-abfd-a437b033614auser",
+  "email": "a115955d-66e5-4514-92b4-5857b5df4822@academy-airlines.com",
+  "is_admin": false
+}
+
+15:29:35.173 [main]  INFO  c.intuit.karate.core.FeatureRuntime - hook.feature - call by tag at line 4: criarUsuario
+15:29:35.190 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 153
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "72d754cb-47bb-4e8d-8940-0ea6bb69648auser",
+  "email": "29050e2a-4dd3-4bd0-9b47-7d71c627cfa8@academy-airlines.com",
+  "password": "1653416975181academy"
+}
+
+
+15:29:37.573 [main]  DEBUG com.intuit.karate - response time in milliseconds: 2383
+1 < 201
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 180
+1 < Etag: W/"b4-rlOiI3s1zi+26IGf93VkF8P50t0"
+1 < Date: Tue, 24 May 2022 18:29:37 GMT
+1 < Via: 1.1 vegur
+{
+  "id": "6a5ac656-8bdc-4381-a847-cb003b898078",
+  "name": "72d754cb-47bb-4e8d-8940-0ea6bb69648auser",
+  "email": "29050e2a-4dd3-4bd0-9b47-7d71c627cfa8@academy-airlines.com",
+  "is_admin": false
+}
+
+15:29:37.593 [main]  DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'payload' with new value: read("payloadUsuario.json")
+15:29:37.606 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 153
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "72d754cb-47bb-4e8d-8940-0ea6bb69648auser",
+  "email": "29050e2a-4dd3-4bd0-9b47-7d71c627cfa8@academy-airlines.com",
+  "password": "1653416975181academy"
+}
+
+
+15:29:38.579 [main]  DEBUG com.intuit.karate - response time in milliseconds: 972
+1 < 422
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 32
+1 < Etag: W/"20-R3itzQwmnR1Gj/otOwtMwb15SQQ"
+1 < Date: Tue, 24 May 2022 18:29:38 GMT
+1 < Via: 1.1 vegur
+{
+  "error": "User already exists."
+}
+
+15:29:38.608 [main]  INFO  com.intuit.karate - [print] {
+  "name": "271da64e-36e7-4de4-ba97-9345d8be2ca307cf98a4-8070-4f74-bd40-43bb039e569b07cf98a4-8070-4f74-bd40-43bb0",
+  "email": "1cf32011-8b52-4e31-a46c-46f6d030e9e2@academy.com",
+  "password": "#(password)",
+  "id": "#(id)",
+  "is_admin": "#(isAdmin)"
+}
+ 
+15:29:38.611 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 196
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "271da64e-36e7-4de4-ba97-9345d8be2ca307cf98a4-8070-4f74-bd40-43bb039e569b07cf98a4-8070-4f74-bd40-43bb0",
+  "email": "1cf32011-8b52-4e31-a46c-46f6d030e9e2@academy.com",
+  "password": "#(password)"
+}
+
+
+15:29:39.384 [main]  DEBUG com.intuit.karate - response time in milliseconds: 772
+1 < 201
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 232
+1 < Etag: W/"e8-6soHIq0pMg1gkjuHR4/7rsCKxpg"
+1 < Date: Tue, 24 May 2022 18:29:39 GMT
+1 < Via: 1.1 vegur
+{
+  "id": "740224c0-3720-41d4-917f-d81c21020b44",
+  "name": "271da64e-36e7-4de4-ba97-9345d8be2ca307cf98a4-8070-4f74-bd40-43bb039e569b07cf98a4-8070-4f74-bd40-43bb0",
+  "email": "1cf32011-8b52-4e31-a46c-46f6d030e9e2@academy.com",
+  "is_admin": false
+}
+
+15:29:39.388 [main]  ERROR com.intuit.karate - criarUsuario.feature:41
+Then status 400
+status code was: 201, expected: 400, response time in milliseconds: 772, url: https://lista-compras-api.herokuapp.com/api/v1/users, response: 
+{"id":"740224c0-3720-41d4-917f-d81c21020b44","name":"271da64e-36e7-4de4-ba97-9345d8be2ca307cf98a4-8070-4f74-bd40-43bb039e569b07cf98a4-8070-4f74-bd40-43bb0","email":"1cf32011-8b52-4e31-a46c-46f6d030e9e2@academy.com","is_admin":false}
+criarUsuario.feature:41
+15:29:39.404 [main]  INFO  com.intuit.karate - [print] {
+  "name": "6d6b64d8-7317-47b9-bf74-e2319ebbbad507cf98a4-8070-4f74-bd40-43bb039e569b07cf98a4-8070-4f74-bd40-43bb0",
+  "email": "80a49916-c9fd-4eef-ad73-f126969245b3094e3591c48bd@academy.com",
+  "password": "#(password)",
+  "id": "#(id)",
+  "is_admin": "#(isAdmin)"
+}
+ 
+15:29:39.409 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 209
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "6d6b64d8-7317-47b9-bf74-e2319ebbbad507cf98a4-8070-4f74-bd40-43bb039e569b07cf98a4-8070-4f74-bd40-43bb0",
+  "email": "80a49916-c9fd-4eef-ad73-f126969245b3094e3591c48bd@academy.com",
+  "password": "#(password)"
+}
+
+
+15:29:40.124 [main]  DEBUG com.intuit.karate - response time in milliseconds: 715
+1 < 201
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 245
+1 < Etag: W/"f5-VLvbSbDUmqUNYTz0HhCeiB4bJd4"
+1 < Date: Tue, 24 May 2022 18:29:40 GMT
+1 < Via: 1.1 vegur
+{
+  "id": "98bf2251-a843-46bd-b558-0be048b0ff45",
+  "name": "6d6b64d8-7317-47b9-bf74-e2319ebbbad507cf98a4-8070-4f74-bd40-43bb039e569b07cf98a4-8070-4f74-bd40-43bb0",
+  "email": "80a49916-c9fd-4eef-ad73-f126969245b3094e3591c48bd@academy.com",
+  "is_admin": false
+}
+
+15:29:40.126 [main]  ERROR com.intuit.karate - criarUsuario.feature:53
+Then status 400
+status code was: 201, expected: 400, response time in milliseconds: 715, url: https://lista-compras-api.herokuapp.com/api/v1/users, response: 
+{"id":"98bf2251-a843-46bd-b558-0be048b0ff45","name":"6d6b64d8-7317-47b9-bf74-e2319ebbbad507cf98a4-8070-4f74-bd40-43bb039e569b07cf98a4-8070-4f74-bd40-43bb0","email":"80a49916-c9fd-4eef-ad73-f126969245b3094e3591c48bd@academy.com","is_admin":false}
+criarUsuario.feature:53
+15:29:40.168 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 96
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "9fff3add-5350-4918-b5f4-b94e29554e1cuser",
+  "email": {
+  },
+  "password": "1653416980141academy"
+}
+
+
+15:29:40.939 [main]  DEBUG com.intuit.karate - response time in milliseconds: 770
+1 < 400
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 24
+1 < Etag: W/"18-928jOLijreS3ro9mYfVt0IU4k/0"
+1 < Date: Tue, 24 May 2022 18:29:40 GMT
+1 < Via: 1.1 vegur
+{
+  "error": "Bad request."
+}
+
+15:29:40.962 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 108
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "21e583dc-f82b-4688-810e-3461254b79dauser",
+  "email": "@academy.com",
+  "password": "1653416980951academy"
+}
+
+
+15:29:41.813 [main]  DEBUG com.intuit.karate - response time in milliseconds: 850
+1 < 400
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 24
+1 < Etag: W/"18-928jOLijreS3ro9mYfVt0IU4k/0"
+1 < Date: Tue, 24 May 2022 18:29:41 GMT
+1 < Via: 1.1 vegur
+{
+  "error": "Bad request."
+}
+
+15:29:42.470 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) criarUsuario.feature
+15:30:25.391 [main]  INFO  com.intuit.karate - Karate version: 1.1.0
+15:30:25.554 [main]  DEBUG com.intuit.karate.Suite - [config] karate-config.js
+15:30:25.555 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1653417025554
+15:30:26.408 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 153
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "048083bc-e87a-4b81-b7ca-146f7f11fb7auser",
+  "email": "b06a5cd3-799d-447f-991f-99af1a6bddd1@academy-airlines.com",
+  "password": "1653417026219academy"
+}
+
+
+15:30:27.659 [main]  DEBUG com.intuit.karate - response time in milliseconds: 1248
+1 < 201
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 180
+1 < Etag: W/"b4-hATPxJH+i3TIgsnOmlIi78RI5R8"
+1 < Date: Tue, 24 May 2022 18:30:27 GMT
+1 < Via: 1.1 vegur
+{
+  "id": "3780334e-921f-4362-a384-6b7bdba3b3d3",
+  "name": "048083bc-e87a-4b81-b7ca-146f7f11fb7auser",
+  "email": "b06a5cd3-799d-447f-991f-99af1a6bddd1@academy-airlines.com",
+  "is_admin": false
+}
+
+15:30:27.695 [main]  INFO  c.intuit.karate.core.FeatureRuntime - hook.feature - call by tag at line 4: criarUsuario
+15:30:27.712 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 153
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "cb72a22c-1976-4f54-9e34-4ea67109358fuser",
+  "email": "9ac9b5f3-7519-4bfb-bd4a-4958f1996299@academy-airlines.com",
+  "password": "1653417027704academy"
+}
+
+
+15:30:28.483 [main]  DEBUG com.intuit.karate - response time in milliseconds: 771
+1 < 201
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 180
+1 < Etag: W/"b4-k14HU6rIJyqVmz/gReS9ocxVlDk"
+1 < Date: Tue, 24 May 2022 18:30:28 GMT
+1 < Via: 1.1 vegur
+{
+  "id": "c6a8752b-3dd1-4233-a9d5-e4cedbc53313",
+  "name": "cb72a22c-1976-4f54-9e34-4ea67109358fuser",
+  "email": "9ac9b5f3-7519-4bfb-bd4a-4958f1996299@academy-airlines.com",
+  "is_admin": false
+}
+
+15:30:28.499 [main]  DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'payload' with new value: read("payloadUsuario.json")
+15:30:28.513 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 153
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "cb72a22c-1976-4f54-9e34-4ea67109358fuser",
+  "email": "9ac9b5f3-7519-4bfb-bd4a-4958f1996299@academy-airlines.com",
+  "password": "1653417027704academy"
+}
+
+
+15:30:29.386 [main]  DEBUG com.intuit.karate - response time in milliseconds: 871
+1 < 422
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 32
+1 < Etag: W/"20-R3itzQwmnR1Gj/otOwtMwb15SQQ"
+1 < Date: Tue, 24 May 2022 18:30:29 GMT
+1 < Via: 1.1 vegur
+{
+  "error": "User already exists."
+}
+
+15:30:29.408 [main]  INFO  com.intuit.karate - [print] {
+  "name": "df9a0d7b-4242-4366-88ef-051ddc89885407cf98a4-8070-4f74-bd40-43bb039e569b07cf98a4-8070-4f74-bd40-43bb0",
+  "email": "640081ce-3f2d-442c-a8e6-a048e22353cc@academy.com",
+  "password": "#(password)",
+  "id": "#(id)",
+  "is_admin": "#(isAdmin)"
+}
+ 
+15:30:29.412 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 196
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "df9a0d7b-4242-4366-88ef-051ddc89885407cf98a4-8070-4f74-bd40-43bb039e569b07cf98a4-8070-4f74-bd40-43bb0",
+  "email": "640081ce-3f2d-442c-a8e6-a048e22353cc@academy.com",
+  "password": "#(password)"
+}
+
+
+15:30:30.293 [main]  DEBUG com.intuit.karate - response time in milliseconds: 880
+1 < 201
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 232
+1 < Etag: W/"e8-2SW9203i+SzNiv38bK3lF4k31J0"
+1 < Date: Tue, 24 May 2022 18:30:30 GMT
+1 < Via: 1.1 vegur
+{
+  "id": "ff1d2a23-6789-43ef-990b-036da03826e8",
+  "name": "df9a0d7b-4242-4366-88ef-051ddc89885407cf98a4-8070-4f74-bd40-43bb039e569b07cf98a4-8070-4f74-bd40-43bb0",
+  "email": "640081ce-3f2d-442c-a8e6-a048e22353cc@academy.com",
+  "is_admin": false
+}
+
+15:30:30.298 [main]  ERROR com.intuit.karate - criarUsuario.feature:41
+Then status 400
+status code was: 201, expected: 400, response time in milliseconds: 880, url: https://lista-compras-api.herokuapp.com/api/v1/users, response: 
+{"id":"ff1d2a23-6789-43ef-990b-036da03826e8","name":"df9a0d7b-4242-4366-88ef-051ddc89885407cf98a4-8070-4f74-bd40-43bb039e569b07cf98a4-8070-4f74-bd40-43bb0","email":"640081ce-3f2d-442c-a8e6-a048e22353cc@academy.com","is_admin":false}
+criarUsuario.feature:41
+15:30:30.325 [main]  INFO  com.intuit.karate - [print] {
+  "name": "60689351-4836-4da8-8af8-c13268295b6a07cf98a4-8070-4f74-bd40-43bb039e569b07cf98a4-8070-4f74-bd40-43bb0",
+  "email": "da08f9b3-a9d1-45f3-8b31-40fe711c0fc2094e3591c48bd@academy.com",
+  "password": "#(password)",
+  "id": "#(id)",
+  "is_admin": "#(isAdmin)"
+}
+ 
+15:30:30.330 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 209
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "60689351-4836-4da8-8af8-c13268295b6a07cf98a4-8070-4f74-bd40-43bb039e569b07cf98a4-8070-4f74-bd40-43bb0",
+  "email": "da08f9b3-a9d1-45f3-8b31-40fe711c0fc2094e3591c48bd@academy.com",
+  "password": "#(password)"
+}
+
+
+15:30:31.525 [main]  DEBUG com.intuit.karate - response time in milliseconds: 1195
+1 < 201
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 245
+1 < Etag: W/"f5-XdqlQMIdfKFLJkgoQvasss99Q3Y"
+1 < Date: Tue, 24 May 2022 18:30:31 GMT
+1 < Via: 1.1 vegur
+{
+  "id": "7599ee93-c631-40b6-b974-36bb1a18585c",
+  "name": "60689351-4836-4da8-8af8-c13268295b6a07cf98a4-8070-4f74-bd40-43bb039e569b07cf98a4-8070-4f74-bd40-43bb0",
+  "email": "da08f9b3-a9d1-45f3-8b31-40fe711c0fc2094e3591c48bd@academy.com",
+  "is_admin": false
+}
+
+15:30:31.529 [main]  ERROR com.intuit.karate - criarUsuario.feature:53
+Then status 400
+status code was: 201, expected: 400, response time in milliseconds: 1195, url: https://lista-compras-api.herokuapp.com/api/v1/users, response: 
+{"id":"7599ee93-c631-40b6-b974-36bb1a18585c","name":"60689351-4836-4da8-8af8-c13268295b6a07cf98a4-8070-4f74-bd40-43bb039e569b07cf98a4-8070-4f74-bd40-43bb0","email":"da08f9b3-a9d1-45f3-8b31-40fe711c0fc2094e3591c48bd@academy.com","is_admin":false}
+criarUsuario.feature:53
+15:30:31.587 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 96
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "82834b8d-bae0-4af9-8737-0b7c1d81c61buser",
+  "email": {
+  },
+  "password": "1653417031543academy"
+}
+
+
+15:30:32.527 [main]  DEBUG com.intuit.karate - response time in milliseconds: 939
+1 < 400
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 24
+1 < Etag: W/"18-928jOLijreS3ro9mYfVt0IU4k/0"
+1 < Date: Tue, 24 May 2022 18:30:32 GMT
+1 < Via: 1.1 vegur
+{
+  "error": "Bad request."
+}
+
+15:30:32.575 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 108
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "bc8fb610-0610-44d8-aebc-72b869ac3237user",
+  "email": "@academy.com",
+  "password": "1653417032560academy"
+}
+
+
+15:30:33.555 [main]  DEBUG com.intuit.karate - response time in milliseconds: 979
+1 < 400
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 24
+1 < Etag: W/"18-928jOLijreS3ro9mYfVt0IU4k/0"
+1 < Date: Tue, 24 May 2022 18:30:33 GMT
+1 < Via: 1.1 vegur
+{
+  "error": "Bad request."
+}
+
+15:30:34.286 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) criarUsuario.feature
+15:33:18.910 [main]  INFO  com.intuit.karate - Karate version: 1.1.0
+15:33:19.105 [main]  DEBUG com.intuit.karate.Suite - [config] karate-config.js
+15:33:19.106 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1653417199106
+15:33:20.096 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 153
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "c14cc7fb-fa15-48b7-8e85-4d14b1ebdda3user",
+  "email": "156085f9-1e46-4b2b-94c6-616e02881297@academy-airlines.com",
+  "password": "1653417199875academy"
+}
+
+
+15:33:21.659 [main]  DEBUG com.intuit.karate - response time in milliseconds: 1554
+1 < 201
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 180
+1 < Etag: W/"b4-m9oYEgldJhbUDmTEO406kNV2/c4"
+1 < Date: Tue, 24 May 2022 18:33:21 GMT
+1 < Via: 1.1 vegur
+{
+  "id": "57248e47-db83-4d55-85e3-bd948ebc5fdc",
+  "name": "c14cc7fb-fa15-48b7-8e85-4d14b1ebdda3user",
+  "email": "156085f9-1e46-4b2b-94c6-616e02881297@academy-airlines.com",
+  "is_admin": false
+}
+
+15:33:21.739 [main]  INFO  c.intuit.karate.core.FeatureRuntime - hook.feature - call by tag at line 4: criarUsuario
+15:33:21.764 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 153
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "c4248e74-3d5c-4e54-beab-057cd61a455cuser",
+  "email": "ac965f96-bc4a-49af-bf5f-00bd1d4f6fd2@academy-airlines.com",
+  "password": "1653417201755academy"
+}
+
+
+15:33:22.660 [main]  DEBUG com.intuit.karate - response time in milliseconds: 895
+1 < 201
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 180
+1 < Etag: W/"b4-vaJBnQsGvAp6wMwSyEl7qKGT/IQ"
+1 < Date: Tue, 24 May 2022 18:33:22 GMT
+1 < Via: 1.1 vegur
+{
+  "id": "a87c33bd-11cc-4f87-8dce-14388d2d6f64",
+  "name": "c4248e74-3d5c-4e54-beab-057cd61a455cuser",
+  "email": "ac965f96-bc4a-49af-bf5f-00bd1d4f6fd2@academy-airlines.com",
+  "is_admin": false
+}
+
+15:33:22.677 [main]  DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'payload' with new value: read("payloadUsuario.json")
+15:33:22.694 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 153
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "c4248e74-3d5c-4e54-beab-057cd61a455cuser",
+  "email": "ac965f96-bc4a-49af-bf5f-00bd1d4f6fd2@academy-airlines.com",
+  "password": "1653417201755academy"
+}
+
+
+15:33:23.460 [main]  DEBUG com.intuit.karate - response time in milliseconds: 764
+1 < 422
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 32
+1 < Etag: W/"20-R3itzQwmnR1Gj/otOwtMwb15SQQ"
+1 < Date: Tue, 24 May 2022 18:33:23 GMT
+1 < Via: 1.1 vegur
+{
+  "error": "User already exists."
+}
+
+15:33:23.528 [main]  INFO  com.intuit.karate - [print] {
+  "name": "6afc89b9-a4d4-4164-96b4-165d6244d78207cf98a4-8070-4f74-bd40-43bb039e569b07cf98a4-8070-4f74-bd40-43bb0",
+  "email": "18178e81-f32c-4e62-8435-a4ba116c1a11@academy.com",
+  "password": "#(password)",
+  "id": "#(id)",
+  "is_admin": "#(isAdmin)"
+}
+ 
+15:33:23.535 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 196
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "6afc89b9-a4d4-4164-96b4-165d6244d78207cf98a4-8070-4f74-bd40-43bb039e569b07cf98a4-8070-4f74-bd40-43bb0",
+  "email": "18178e81-f32c-4e62-8435-a4ba116c1a11@academy.com",
+  "password": "#(password)"
+}
+
+
+15:33:24.625 [main]  DEBUG com.intuit.karate - response time in milliseconds: 1089
+1 < 201
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 232
+1 < Etag: W/"e8-Xxax3Wylr4Uh9xGjZRoR7AGtedY"
+1 < Date: Tue, 24 May 2022 18:33:24 GMT
+1 < Via: 1.1 vegur
+{
+  "id": "f6fca4aa-6aaf-4f80-8759-7daab5e05ccb",
+  "name": "6afc89b9-a4d4-4164-96b4-165d6244d78207cf98a4-8070-4f74-bd40-43bb039e569b07cf98a4-8070-4f74-bd40-43bb0",
+  "email": "18178e81-f32c-4e62-8435-a4ba116c1a11@academy.com",
+  "is_admin": false
+}
+
+15:33:24.627 [main]  ERROR com.intuit.karate - criarUsuario.feature:41
+Then status 400
+status code was: 201, expected: 400, response time in milliseconds: 1089, url: https://lista-compras-api.herokuapp.com/api/v1/users, response: 
+{"id":"f6fca4aa-6aaf-4f80-8759-7daab5e05ccb","name":"6afc89b9-a4d4-4164-96b4-165d6244d78207cf98a4-8070-4f74-bd40-43bb039e569b07cf98a4-8070-4f74-bd40-43bb0","email":"18178e81-f32c-4e62-8435-a4ba116c1a11@academy.com","is_admin":false}
+criarUsuario.feature:41
+15:33:24.641 [main]  INFO  com.intuit.karate - [print] {
+  "name": "3262fd8e-67af-4ca4-b348-d7253044bf1d07cf98a4-8070-4f74-bd40-43bb039e569b07cf98a4-8070-4f74-bd40-43bb0",
+  "email": "6e4c70c7-3106-4bd2-9630-4bf1fab01407094e3591c48bd@academy.com",
+  "password": "#(password)",
+  "id": "#(id)",
+  "is_admin": "#(isAdmin)"
+}
+ 
+15:33:24.646 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 209
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "3262fd8e-67af-4ca4-b348-d7253044bf1d07cf98a4-8070-4f74-bd40-43bb039e569b07cf98a4-8070-4f74-bd40-43bb0",
+  "email": "6e4c70c7-3106-4bd2-9630-4bf1fab01407094e3591c48bd@academy.com",
+  "password": "#(password)"
+}
+
+
+15:33:25.521 [main]  DEBUG com.intuit.karate - response time in milliseconds: 873
+1 < 201
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 245
+1 < Etag: W/"f5-hSGx1pHZqVzur3Eg+Tv2mF5TBEw"
+1 < Date: Tue, 24 May 2022 18:33:25 GMT
+1 < Via: 1.1 vegur
+{
+  "id": "00db5950-451e-492a-9053-5f6c9d6a557e",
+  "name": "3262fd8e-67af-4ca4-b348-d7253044bf1d07cf98a4-8070-4f74-bd40-43bb039e569b07cf98a4-8070-4f74-bd40-43bb0",
+  "email": "6e4c70c7-3106-4bd2-9630-4bf1fab01407094e3591c48bd@academy.com",
+  "is_admin": false
+}
+
+15:33:25.525 [main]  ERROR com.intuit.karate - criarUsuario.feature:53
+Then status 400
+status code was: 201, expected: 400, response time in milliseconds: 873, url: https://lista-compras-api.herokuapp.com/api/v1/users, response: 
+{"id":"00db5950-451e-492a-9053-5f6c9d6a557e","name":"3262fd8e-67af-4ca4-b348-d7253044bf1d07cf98a4-8070-4f74-bd40-43bb039e569b07cf98a4-8070-4f74-bd40-43bb0","email":"6e4c70c7-3106-4bd2-9630-4bf1fab01407094e3591c48bd@academy.com","is_admin":false}
+criarUsuario.feature:53
+15:33:25.640 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 96
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "0470cb41-d8fd-4a1b-81e3-ec858cb7d44buser",
+  "email": {
+  },
+  "password": "1653417205552academy"
+}
+
+
+15:33:26.521 [main]  DEBUG com.intuit.karate - response time in milliseconds: 880
+1 < 400
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 24
+1 < Etag: W/"18-928jOLijreS3ro9mYfVt0IU4k/0"
+1 < Date: Tue, 24 May 2022 18:33:26 GMT
+1 < Via: 1.1 vegur
+{
+  "error": "Bad request."
+}
+
+15:33:26.583 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 108
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "f52e25b1-7827-46a8-a313-c3a97ea32fe2user",
+  "email": "@academy.com",
+  "password": "1653417206555academy"
+}
+
+
+15:33:27.574 [main]  DEBUG com.intuit.karate - response time in milliseconds: 990
+1 < 400
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 24
+1 < Etag: W/"18-928jOLijreS3ro9mYfVt0IU4k/0"
+1 < Date: Tue, 24 May 2022 18:33:27 GMT
+1 < Via: 1.1 vegur
+{
+  "error": "Bad request."
+}
+
+15:33:27.641 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 96
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "3ed63f3c-4d29-4fad-818d-c09a9ca059cfuser",
+  "email": "",
+  "password": "1653417207612academy"
+}
+
+
+15:33:28.605 [main]  DEBUG com.intuit.karate - response time in milliseconds: 962
+1 < 400
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 24
+1 < Etag: W/"18-928jOLijreS3ro9mYfVt0IU4k/0"
+1 < Date: Tue, 24 May 2022 18:33:28 GMT
+1 < Via: 1.1 vegur
+{
+  "error": "Bad request."
+}
+
+15:33:28.616 [main]  ERROR com.intuit.karate - criarUsuario.feature:92
+And match response == { id: "#string", name: "#(payload.name)", email: "#(payload.email)", is_admin: "#boolean" }
+match failed: EQUALS
+  $ | not equal | actual does not contain key - 'id' (MAP:MAP)
+  {"error":"Bad request."}
+  {"id":"#string","name":"3ed63f3c-4d29-4fad-818d-c09a9ca059cfuser","email":"#(email)","is_admin":"#boolean"}
+
+
+criarUsuario.feature:92
+15:33:29.904 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) criarUsuario.feature
+15:34:53.601 [main]  INFO  com.intuit.karate - Karate version: 1.1.0
+15:34:53.772 [main]  DEBUG com.intuit.karate.Suite - [config] karate-config.js
+15:34:53.773 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1653417293773
+15:34:54.681 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 153
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "db7d0367-5194-42a9-a921-4b5bf22f6c8cuser",
+  "email": "a62c306f-5c79-4c65-b52f-950bbaaf4838@academy-airlines.com",
+  "password": "1653417294470academy"
+}
+
+
+15:34:55.662 [main]  DEBUG com.intuit.karate - response time in milliseconds: 979
+1 < 201
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 180
+1 < Etag: W/"b4-Tyq0aDx1L7z7yI87mFejD8X1rug"
+1 < Date: Tue, 24 May 2022 18:34:55 GMT
+1 < Via: 1.1 vegur
+{
+  "id": "8a076ce4-e582-4473-9a6f-a35b36575cee",
+  "name": "db7d0367-5194-42a9-a921-4b5bf22f6c8cuser",
+  "email": "a62c306f-5c79-4c65-b52f-950bbaaf4838@academy-airlines.com",
+  "is_admin": false
+}
+
+15:34:55.692 [main]  INFO  c.intuit.karate.core.FeatureRuntime - hook.feature - call by tag at line 4: criarUsuario
+15:34:55.710 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 153
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "a050fa50-8692-45d4-b179-e70e9f2e8787user",
+  "email": "818515a5-1236-486f-bb2a-1ce61d2364fe@academy-airlines.com",
+  "password": "1653417295701academy"
+}
+
+
+15:34:56.562 [main]  DEBUG com.intuit.karate - response time in milliseconds: 851
+1 < 201
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 180
+1 < Etag: W/"b4-oJ0iNgSLAo6DgJLRtAPLncgo12A"
+1 < Date: Tue, 24 May 2022 18:34:56 GMT
+1 < Via: 1.1 vegur
+{
+  "id": "22d02b61-321c-4bd3-9dd0-33dcc78745e5",
+  "name": "a050fa50-8692-45d4-b179-e70e9f2e8787user",
+  "email": "818515a5-1236-486f-bb2a-1ce61d2364fe@academy-airlines.com",
+  "is_admin": false
+}
+
+15:34:56.582 [main]  DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'payload' with new value: read("payloadUsuario.json")
+15:34:56.594 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 153
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "a050fa50-8692-45d4-b179-e70e9f2e8787user",
+  "email": "818515a5-1236-486f-bb2a-1ce61d2364fe@academy-airlines.com",
+  "password": "1653417295701academy"
+}
+
+
+15:34:57.641 [main]  DEBUG com.intuit.karate - response time in milliseconds: 1046
+1 < 422
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 32
+1 < Etag: W/"20-R3itzQwmnR1Gj/otOwtMwb15SQQ"
+1 < Date: Tue, 24 May 2022 18:34:57 GMT
+1 < Via: 1.1 vegur
+{
+  "error": "User already exists."
+}
+
+15:34:57.672 [main]  INFO  com.intuit.karate - [print] {
+  "name": "0b170c2e-5c84-4097-bc93-fcdc0947f70207cf98a4-8070-4f74-bd40-43bb039e569b07cf98a4-8070-4f74-bd40-43bb0",
+  "email": "8708a46d-9221-4d34-bd49-22423d02f98e@academy.com",
+  "password": "#(password)",
+  "id": "#(id)",
+  "is_admin": "#(isAdmin)"
+}
+ 
+15:34:57.676 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 196
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "0b170c2e-5c84-4097-bc93-fcdc0947f70207cf98a4-8070-4f74-bd40-43bb039e569b07cf98a4-8070-4f74-bd40-43bb0",
+  "email": "8708a46d-9221-4d34-bd49-22423d02f98e@academy.com",
+  "password": "#(password)"
+}
+
+
+15:34:58.483 [main]  DEBUG com.intuit.karate - response time in milliseconds: 806
+1 < 201
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 232
+1 < Etag: W/"e8-6HX2LXMIJLRezenvvOCFKIuqyYM"
+1 < Date: Tue, 24 May 2022 18:34:58 GMT
+1 < Via: 1.1 vegur
+{
+  "id": "6ed506db-2ccb-4760-bfed-c34937377323",
+  "name": "0b170c2e-5c84-4097-bc93-fcdc0947f70207cf98a4-8070-4f74-bd40-43bb039e569b07cf98a4-8070-4f74-bd40-43bb0",
+  "email": "8708a46d-9221-4d34-bd49-22423d02f98e@academy.com",
+  "is_admin": false
+}
+
+15:34:58.487 [main]  ERROR com.intuit.karate - criarUsuario.feature:41
+Then status 400
+status code was: 201, expected: 400, response time in milliseconds: 806, url: https://lista-compras-api.herokuapp.com/api/v1/users, response: 
+{"id":"6ed506db-2ccb-4760-bfed-c34937377323","name":"0b170c2e-5c84-4097-bc93-fcdc0947f70207cf98a4-8070-4f74-bd40-43bb039e569b07cf98a4-8070-4f74-bd40-43bb0","email":"8708a46d-9221-4d34-bd49-22423d02f98e@academy.com","is_admin":false}
+criarUsuario.feature:41
+15:34:58.504 [main]  INFO  com.intuit.karate - [print] {
+  "name": "4b269812-3247-4b0d-9d90-a0197fefab7f07cf98a4-8070-4f74-bd40-43bb039e569b07cf98a4-8070-4f74-bd40-43bb0",
+  "email": "84f93835-b83c-4358-bb14-cfdc442b1f32094e3591c48bd@academy.com",
+  "password": "#(password)",
+  "id": "#(id)",
+  "is_admin": "#(isAdmin)"
+}
+ 
+15:34:58.508 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 209
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "4b269812-3247-4b0d-9d90-a0197fefab7f07cf98a4-8070-4f74-bd40-43bb039e569b07cf98a4-8070-4f74-bd40-43bb0",
+  "email": "84f93835-b83c-4358-bb14-cfdc442b1f32094e3591c48bd@academy.com",
+  "password": "#(password)"
+}
+
+
+15:34:59.509 [main]  DEBUG com.intuit.karate - response time in milliseconds: 1000
+1 < 201
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 245
+1 < Etag: W/"f5-c/pEQqtRDGSDR6r1FCT7qEgi1CI"
+1 < Date: Tue, 24 May 2022 18:34:59 GMT
+1 < Via: 1.1 vegur
+{
+  "id": "55720b31-00dd-49d2-be38-86c11470bd0a",
+  "name": "4b269812-3247-4b0d-9d90-a0197fefab7f07cf98a4-8070-4f74-bd40-43bb039e569b07cf98a4-8070-4f74-bd40-43bb0",
+  "email": "84f93835-b83c-4358-bb14-cfdc442b1f32094e3591c48bd@academy.com",
+  "is_admin": false
+}
+
+15:34:59.512 [main]  ERROR com.intuit.karate - criarUsuario.feature:53
+Then status 400
+status code was: 201, expected: 400, response time in milliseconds: 1000, url: https://lista-compras-api.herokuapp.com/api/v1/users, response: 
+{"id":"55720b31-00dd-49d2-be38-86c11470bd0a","name":"4b269812-3247-4b0d-9d90-a0197fefab7f07cf98a4-8070-4f74-bd40-43bb039e569b07cf98a4-8070-4f74-bd40-43bb0","email":"84f93835-b83c-4358-bb14-cfdc442b1f32094e3591c48bd@academy.com","is_admin":false}
+criarUsuario.feature:53
+15:34:59.549 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 96
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "62e470ee-608c-44de-bc83-c5cb1fa2c467user",
+  "email": {
+  },
+  "password": "1653417299521academy"
+}
+
+
+15:35:00.522 [main]  DEBUG com.intuit.karate - response time in milliseconds: 972
+1 < 400
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 24
+1 < Etag: W/"18-928jOLijreS3ro9mYfVt0IU4k/0"
+1 < Date: Tue, 24 May 2022 18:35:00 GMT
+1 < Via: 1.1 vegur
+{
+  "error": "Bad request."
+}
+
+15:35:00.540 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 108
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "7d9cff91-1b59-4245-a4d4-4567c75e2de0user",
+  "email": "@academy.com",
+  "password": "1653417300532academy"
+}
+
+
+15:35:01.344 [main]  DEBUG com.intuit.karate - response time in milliseconds: 802
+1 < 400
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 24
+1 < Etag: W/"18-928jOLijreS3ro9mYfVt0IU4k/0"
+1 < Date: Tue, 24 May 2022 18:35:01 GMT
+1 < Via: 1.1 vegur
+{
+  "error": "Bad request."
+}
+
+15:35:01.390 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 96
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "21e5469d-ce14-4b6c-8ac2-b309a274e878user",
+  "email": "",
+  "password": "1653417301376academy"
+}
+
+
+15:35:02.280 [main]  DEBUG com.intuit.karate - response time in milliseconds: 888
+1 < 400
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 24
+1 < Etag: W/"18-928jOLijreS3ro9mYfVt0IU4k/0"
+1 < Date: Tue, 24 May 2022 18:35:02 GMT
+1 < Via: 1.1 vegur
+{
+  "error": "Bad request."
+}
+
+15:35:02.927 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) criarUsuario.feature
+15:37:25.832 [main]  INFO  com.intuit.karate - Karate version: 1.1.0
+15:37:25.996 [main]  DEBUG com.intuit.karate.Suite - [config] karate-config.js
+15:37:25.997 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1653417445997
+15:37:26.957 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 153
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "f229b6d1-e3d2-4fe7-92f6-5fa18b68bf27user",
+  "email": "959504fa-9fe4-49fe-8f39-e3490a20ba63@academy-airlines.com",
+  "password": "1653417446714academy"
+}
+
+
+15:37:28.262 [main]  DEBUG com.intuit.karate - response time in milliseconds: 1302
+1 < 201
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 180
+1 < Etag: W/"b4-ZDDxlzSITAwVXm/4e2kTjfGKhpM"
+1 < Date: Tue, 24 May 2022 18:37:28 GMT
+1 < Via: 1.1 vegur
+{
+  "id": "a4373257-2ab8-4169-a423-063d6b95de6b",
+  "name": "f229b6d1-e3d2-4fe7-92f6-5fa18b68bf27user",
+  "email": "959504fa-9fe4-49fe-8f39-e3490a20ba63@academy-airlines.com",
+  "is_admin": false
+}
+
+15:37:28.295 [main]  INFO  c.intuit.karate.core.FeatureRuntime - hook.feature - call by tag at line 4: criarUsuario
+15:37:28.312 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 153
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "4662a5e9-3c8e-452f-ae1d-ff1225c0425euser",
+  "email": "92824b6c-f9fd-4ccb-a143-3778149066f5@academy-airlines.com",
+  "password": "1653417448303academy"
+}
+
+
+15:37:29.315 [main]  DEBUG com.intuit.karate - response time in milliseconds: 1001
+1 < 201
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 180
+1 < Etag: W/"b4-Q+8WlT1drTeUehHObsv5pfMmG+M"
+1 < Date: Tue, 24 May 2022 18:37:29 GMT
+1 < Via: 1.1 vegur
+{
+  "id": "942992a3-b530-477e-8bc2-cfe14fb4dda8",
+  "name": "4662a5e9-3c8e-452f-ae1d-ff1225c0425euser",
+  "email": "92824b6c-f9fd-4ccb-a143-3778149066f5@academy-airlines.com",
+  "is_admin": false
+}
+
+15:37:29.330 [main]  DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'payload' with new value: read("payloadUsuario.json")
+15:37:29.342 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 153
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "4662a5e9-3c8e-452f-ae1d-ff1225c0425euser",
+  "email": "92824b6c-f9fd-4ccb-a143-3778149066f5@academy-airlines.com",
+  "password": "1653417448303academy"
+}
+
+
+15:37:30.323 [main]  DEBUG com.intuit.karate - response time in milliseconds: 979
+1 < 422
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 32
+1 < Etag: W/"20-R3itzQwmnR1Gj/otOwtMwb15SQQ"
+1 < Date: Tue, 24 May 2022 18:37:30 GMT
+1 < Via: 1.1 vegur
+{
+  "error": "User already exists."
+}
+
+15:37:30.367 [main]  INFO  com.intuit.karate - [print] {
+  "name": "9a770c21-09ba-49fe-8a53-310354cf7f2607cf98a4-8070-4f74-bd40-43bb039e569b07cf98a4-8070-4f74-bd40-43bb0",
+  "email": "55ed75c6-45c6-423a-a4f7-584c8171d2db@academy.com",
+  "password": "#(password)",
+  "id": "#(id)",
+  "is_admin": "#(isAdmin)"
+}
+ 
+15:37:30.370 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 196
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "9a770c21-09ba-49fe-8a53-310354cf7f2607cf98a4-8070-4f74-bd40-43bb039e569b07cf98a4-8070-4f74-bd40-43bb0",
+  "email": "55ed75c6-45c6-423a-a4f7-584c8171d2db@academy.com",
+  "password": "#(password)"
+}
+
+
+15:37:31.368 [main]  DEBUG com.intuit.karate - response time in milliseconds: 997
+1 < 201
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 232
+1 < Etag: W/"e8-fj/CCvzwaK1yK1VqlWw9B5Q93WA"
+1 < Date: Tue, 24 May 2022 18:37:31 GMT
+1 < Via: 1.1 vegur
+{
+  "id": "54fa29e9-aa34-4249-a131-797cf8edddc8",
+  "name": "9a770c21-09ba-49fe-8a53-310354cf7f2607cf98a4-8070-4f74-bd40-43bb039e569b07cf98a4-8070-4f74-bd40-43bb0",
+  "email": "55ed75c6-45c6-423a-a4f7-584c8171d2db@academy.com",
+  "is_admin": false
+}
+
+15:37:31.371 [main]  ERROR com.intuit.karate - criarUsuario.feature:41
+Then status 400
+status code was: 201, expected: 400, response time in milliseconds: 997, url: https://lista-compras-api.herokuapp.com/api/v1/users, response: 
+{"id":"54fa29e9-aa34-4249-a131-797cf8edddc8","name":"9a770c21-09ba-49fe-8a53-310354cf7f2607cf98a4-8070-4f74-bd40-43bb039e569b07cf98a4-8070-4f74-bd40-43bb0","email":"55ed75c6-45c6-423a-a4f7-584c8171d2db@academy.com","is_admin":false}
+criarUsuario.feature:41
+15:37:31.387 [main]  INFO  com.intuit.karate - [print] {
+  "name": "bcbea78f-cbc3-4b28-8a4e-62fe195577a707cf98a4-8070-4f74-bd40-43bb039e569b07cf98a4-8070-4f74-bd40-43bb0",
+  "email": "22bd258c-933d-4523-b9e4-f1648e8c0a9e094e3591c48bd@academy.com",
+  "password": "#(password)",
+  "id": "#(id)",
+  "is_admin": "#(isAdmin)"
+}
+ 
+15:37:31.391 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 209
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "bcbea78f-cbc3-4b28-8a4e-62fe195577a707cf98a4-8070-4f74-bd40-43bb039e569b07cf98a4-8070-4f74-bd40-43bb0",
+  "email": "22bd258c-933d-4523-b9e4-f1648e8c0a9e094e3591c48bd@academy.com",
+  "password": "#(password)"
+}
+
+
+15:37:32.392 [main]  DEBUG com.intuit.karate - response time in milliseconds: 999
+1 < 201
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 245
+1 < Etag: W/"f5-6O6JwKw3yRnsXJ4ELxsw2iDdOIs"
+1 < Date: Tue, 24 May 2022 18:37:32 GMT
+1 < Via: 1.1 vegur
+{
+  "id": "6cef9613-783e-4731-a39e-60cb7cead522",
+  "name": "bcbea78f-cbc3-4b28-8a4e-62fe195577a707cf98a4-8070-4f74-bd40-43bb039e569b07cf98a4-8070-4f74-bd40-43bb0",
+  "email": "22bd258c-933d-4523-b9e4-f1648e8c0a9e094e3591c48bd@academy.com",
+  "is_admin": false
+}
+
+15:37:32.395 [main]  ERROR com.intuit.karate - criarUsuario.feature:53
+Then status 400
+status code was: 201, expected: 400, response time in milliseconds: 999, url: https://lista-compras-api.herokuapp.com/api/v1/users, response: 
+{"id":"6cef9613-783e-4731-a39e-60cb7cead522","name":"bcbea78f-cbc3-4b28-8a4e-62fe195577a707cf98a4-8070-4f74-bd40-43bb039e569b07cf98a4-8070-4f74-bd40-43bb0","email":"22bd258c-933d-4523-b9e4-f1648e8c0a9e094e3591c48bd@academy.com","is_admin":false}
+criarUsuario.feature:53
+15:37:32.463 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 96
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "c085d123-ea38-4eb8-ae96-c3e597b61c07user",
+  "email": {
+  },
+  "password": "1653417452414academy"
+}
+
+
+15:37:33.328 [main]  DEBUG com.intuit.karate - response time in milliseconds: 864
+1 < 400
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 24
+1 < Etag: W/"18-928jOLijreS3ro9mYfVt0IU4k/0"
+1 < Date: Tue, 24 May 2022 18:37:33 GMT
+1 < Via: 1.1 vegur
+{
+  "error": "Bad request."
+}
+
+15:37:33.373 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 108
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "65ab0e47-942a-405f-a79e-d8e445f4037euser",
+  "email": "@academy.com",
+  "password": "1653417453363academy"
+}
+
+
+15:37:33.986 [main]  DEBUG com.intuit.karate - response time in milliseconds: 612
+1 < 400
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 24
+1 < Etag: W/"18-928jOLijreS3ro9mYfVt0IU4k/0"
+1 < Date: Tue, 24 May 2022 18:37:33 GMT
+1 < Via: 1.1 vegur
+{
+  "error": "Bad request."
+}
+
+15:37:33.999 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 96
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "b4034f3c-d9cc-4bac-9d30-b9e6a62742dfuser",
+  "email": "",
+  "password": "1653417453992academy"
+}
+
+
+15:37:34.752 [main]  DEBUG com.intuit.karate - response time in milliseconds: 753
+1 < 400
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 24
+1 < Etag: W/"18-928jOLijreS3ro9mYfVt0IU4k/0"
+1 < Date: Tue, 24 May 2022 18:37:34 GMT
+1 < Via: 1.1 vegur
+{
+  "error": "Bad request."
+}
+
+15:37:34.773 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 113
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "",
+  "email": "22c5095c-c426-4cc1-b2b9-73e15bb2e0a1@academy-airlines.com",
+  "password": "1653417454762academy"
+}
+
+
+15:37:35.572 [main]  DEBUG com.intuit.karate - response time in milliseconds: 799
+1 < 400
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 24
+1 < Etag: W/"18-928jOLijreS3ro9mYfVt0IU4k/0"
+1 < Date: Tue, 24 May 2022 18:37:35 GMT
+1 < Via: 1.1 vegur
+{
+  "error": "Bad request."
+}
+
+15:37:35.576 [main]  ERROR com.intuit.karate - criarUsuario.feature:104
+Then status 201
+status code was: 400, expected: 201, response time in milliseconds: 799, url: https://lista-compras-api.herokuapp.com/api/v1/users, response: 
+{"error":"Bad request."}
+criarUsuario.feature:104
+15:37:35.620 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 133
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "ebb2940d-d73d-42f1-a9c7-45482336e84cuser",
+  "email": "d924d2c8-7329-47ad-b60a-93b48277412d@academy-airlines.com",
+  "password": ""
+}
+
+
+15:37:36.444 [main]  DEBUG com.intuit.karate - response time in milliseconds: 823
+1 < 400
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 24
+1 < Etag: W/"18-928jOLijreS3ro9mYfVt0IU4k/0"
+1 < Date: Tue, 24 May 2022 18:37:36 GMT
+1 < Via: 1.1 vegur
+{
+  "error": "Bad request."
+}
+
+15:37:36.446 [main]  ERROR com.intuit.karate - criarUsuario.feature:117
+Then status 201
+status code was: 400, expected: 201, response time in milliseconds: 823, url: https://lista-compras-api.herokuapp.com/api/v1/users, response: 
+{"error":"Bad request."}
+criarUsuario.feature:117
+15:37:37.332 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) criarUsuario.feature
+15:38:06.691 [main]  INFO  com.intuit.karate - Karate version: 1.1.0
+15:38:06.886 [main]  DEBUG com.intuit.karate.Suite - [config] karate-config.js
+15:38:06.887 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1653417486887
+15:38:07.793 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 153
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "d45236ae-a336-49fa-9f4b-042c39a87beauser",
+  "email": "b16613d8-1975-4063-b531-b32f1bbe8a8f@academy-airlines.com",
+  "password": "1653417487578academy"
+}
+
+
+15:38:09.541 [main]  DEBUG com.intuit.karate - response time in milliseconds: 1743
+1 < 201
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 180
+1 < Etag: W/"b4-xeLpIiZWDpBYVT2s+wqnYZqBOtY"
+1 < Date: Tue, 24 May 2022 18:38:09 GMT
+1 < Via: 1.1 vegur
+{
+  "id": "b6a60ee9-739f-4d87-8a22-782f217f63e9",
+  "name": "d45236ae-a336-49fa-9f4b-042c39a87beauser",
+  "email": "b16613d8-1975-4063-b531-b32f1bbe8a8f@academy-airlines.com",
+  "is_admin": false
+}
+
+15:38:09.579 [main]  INFO  c.intuit.karate.core.FeatureRuntime - hook.feature - call by tag at line 4: criarUsuario
+15:38:09.593 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 153
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "4bc97156-a369-412b-a952-a1682b718502user",
+  "email": "77e722c9-5aef-49fe-a8dd-79ec196bccaf@academy-airlines.com",
+  "password": "1653417489586academy"
+}
+
+
+15:38:10.590 [main]  DEBUG com.intuit.karate - response time in milliseconds: 997
+1 < 201
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 180
+1 < Etag: W/"b4-HHVenXw/OvkyqLxfRvjuq37ccq0"
+1 < Date: Tue, 24 May 2022 18:38:10 GMT
+1 < Via: 1.1 vegur
+{
+  "id": "cbb3313c-6a21-4b50-bc82-367e49b823b2",
+  "name": "4bc97156-a369-412b-a952-a1682b718502user",
+  "email": "77e722c9-5aef-49fe-a8dd-79ec196bccaf@academy-airlines.com",
+  "is_admin": false
+}
+
+15:38:10.597 [main]  DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'payload' with new value: read("payloadUsuario.json")
+15:38:10.603 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 153
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "4bc97156-a369-412b-a952-a1682b718502user",
+  "email": "77e722c9-5aef-49fe-a8dd-79ec196bccaf@academy-airlines.com",
+  "password": "1653417489586academy"
+}
+
+
+15:38:11.401 [main]  DEBUG com.intuit.karate - response time in milliseconds: 796
+1 < 422
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 32
+1 < Etag: W/"20-R3itzQwmnR1Gj/otOwtMwb15SQQ"
+1 < Date: Tue, 24 May 2022 18:38:11 GMT
+1 < Via: 1.1 vegur
+{
+  "error": "User already exists."
+}
+
+15:38:11.423 [main]  INFO  com.intuit.karate - [print] {
+  "name": "8d08531f-80cc-4eed-9590-9277decfa2e507cf98a4-8070-4f74-bd40-43bb039e569b07cf98a4-8070-4f74-bd40-43bb0",
+  "email": "c5eea878-023b-4211-bb8b-861d2fff20fb@academy.com",
+  "password": "#(password)",
+  "id": "#(id)",
+  "is_admin": "#(isAdmin)"
+}
+ 
+15:38:11.426 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 196
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "8d08531f-80cc-4eed-9590-9277decfa2e507cf98a4-8070-4f74-bd40-43bb039e569b07cf98a4-8070-4f74-bd40-43bb0",
+  "email": "c5eea878-023b-4211-bb8b-861d2fff20fb@academy.com",
+  "password": "#(password)"
+}
+
+
+15:38:12.234 [main]  DEBUG com.intuit.karate - response time in milliseconds: 807
+1 < 201
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 232
+1 < Etag: W/"e8-iI1AvF+Z2kqx9DWEpjxLkPOg2W8"
+1 < Date: Tue, 24 May 2022 18:38:12 GMT
+1 < Via: 1.1 vegur
+{
+  "id": "9873cc45-708d-4008-8bc1-85fba31c070f",
+  "name": "8d08531f-80cc-4eed-9590-9277decfa2e507cf98a4-8070-4f74-bd40-43bb039e569b07cf98a4-8070-4f74-bd40-43bb0",
+  "email": "c5eea878-023b-4211-bb8b-861d2fff20fb@academy.com",
+  "is_admin": false
+}
+
+15:38:12.237 [main]  ERROR com.intuit.karate - criarUsuario.feature:41
+Then status 400
+status code was: 201, expected: 400, response time in milliseconds: 807, url: https://lista-compras-api.herokuapp.com/api/v1/users, response: 
+{"id":"9873cc45-708d-4008-8bc1-85fba31c070f","name":"8d08531f-80cc-4eed-9590-9277decfa2e507cf98a4-8070-4f74-bd40-43bb039e569b07cf98a4-8070-4f74-bd40-43bb0","email":"c5eea878-023b-4211-bb8b-861d2fff20fb@academy.com","is_admin":false}
+criarUsuario.feature:41
+15:38:12.254 [main]  INFO  com.intuit.karate - [print] {
+  "name": "b4637f74-c29f-4c23-8578-e2d8911c588207cf98a4-8070-4f74-bd40-43bb039e569b07cf98a4-8070-4f74-bd40-43bb0",
+  "email": "ea7e1a35-ce83-4b69-9e71-2fcc624057d4094e3591c48bd@academy.com",
+  "password": "#(password)",
+  "id": "#(id)",
+  "is_admin": "#(isAdmin)"
+}
+ 
+15:38:12.258 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 209
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "b4637f74-c29f-4c23-8578-e2d8911c588207cf98a4-8070-4f74-bd40-43bb039e569b07cf98a4-8070-4f74-bd40-43bb0",
+  "email": "ea7e1a35-ce83-4b69-9e71-2fcc624057d4094e3591c48bd@academy.com",
+  "password": "#(password)"
+}
+
+
+15:38:13.266 [main]  DEBUG com.intuit.karate - response time in milliseconds: 1006
+1 < 201
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 245
+1 < Etag: W/"f5-V7+giDnPrGlWcRHYStjRZDxAmHY"
+1 < Date: Tue, 24 May 2022 18:38:13 GMT
+1 < Via: 1.1 vegur
+{
+  "id": "d214ea34-d8c5-4e83-bb8c-ceb3c2e87514",
+  "name": "b4637f74-c29f-4c23-8578-e2d8911c588207cf98a4-8070-4f74-bd40-43bb039e569b07cf98a4-8070-4f74-bd40-43bb0",
+  "email": "ea7e1a35-ce83-4b69-9e71-2fcc624057d4094e3591c48bd@academy.com",
+  "is_admin": false
+}
+
+15:38:13.270 [main]  ERROR com.intuit.karate - criarUsuario.feature:53
+Then status 400
+status code was: 201, expected: 400, response time in milliseconds: 1006, url: https://lista-compras-api.herokuapp.com/api/v1/users, response: 
+{"id":"d214ea34-d8c5-4e83-bb8c-ceb3c2e87514","name":"b4637f74-c29f-4c23-8578-e2d8911c588207cf98a4-8070-4f74-bd40-43bb039e569b07cf98a4-8070-4f74-bd40-43bb0","email":"ea7e1a35-ce83-4b69-9e71-2fcc624057d4094e3591c48bd@academy.com","is_admin":false}
+criarUsuario.feature:53
+15:38:13.334 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 96
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "9eca529d-e851-40f0-9383-10b6eaa94e32user",
+  "email": {
+  },
+  "password": "1653417493298academy"
+}
+
+
+15:38:13.982 [main]  DEBUG com.intuit.karate - response time in milliseconds: 648
+1 < 400
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 24
+1 < Etag: W/"18-928jOLijreS3ro9mYfVt0IU4k/0"
+1 < Date: Tue, 24 May 2022 18:38:13 GMT
+1 < Via: 1.1 vegur
+{
+  "error": "Bad request."
+}
+
+15:38:14.022 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 108
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "f504ee00-c594-47bc-8a7e-80c8bf9e2294user",
+  "email": "@academy.com",
+  "password": "1653417494014academy"
+}
+
+
+15:38:14.779 [main]  DEBUG com.intuit.karate - response time in milliseconds: 756
+1 < 400
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 24
+1 < Etag: W/"18-928jOLijreS3ro9mYfVt0IU4k/0"
+1 < Date: Tue, 24 May 2022 18:38:14 GMT
+1 < Via: 1.1 vegur
+{
+  "error": "Bad request."
+}
+
+15:38:14.796 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 96
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "aa49328a-0cbb-4170-904c-646858156577user",
+  "email": "",
+  "password": "1653417494788academy"
+}
+
+
+15:38:15.607 [main]  DEBUG com.intuit.karate - response time in milliseconds: 810
+1 < 400
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 24
+1 < Etag: W/"18-928jOLijreS3ro9mYfVt0IU4k/0"
+1 < Date: Tue, 24 May 2022 18:38:15 GMT
+1 < Via: 1.1 vegur
+{
+  "error": "Bad request."
+}
+
+15:38:15.626 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 113
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "",
+  "email": "e2aeccec-b2e3-4a12-b232-26ae1b3e0354@academy-airlines.com",
+  "password": "1653417495616academy"
+}
+
+
+15:38:16.481 [main]  DEBUG com.intuit.karate - response time in milliseconds: 854
+1 < 400
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 24
+1 < Etag: W/"18-928jOLijreS3ro9mYfVt0IU4k/0"
+1 < Date: Tue, 24 May 2022 18:38:16 GMT
+1 < Via: 1.1 vegur
+{
+  "error": "Bad request."
+}
+
+15:38:16.498 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 133
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "e9d44d36-cf88-4733-ad00-58a9a4135c68user",
+  "email": "7c30660d-641e-460c-80f2-d266829ec11a@academy-airlines.com",
+  "password": ""
+}
+
+
+15:38:17.303 [main]  DEBUG com.intuit.karate - response time in milliseconds: 805
+1 < 400
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 24
+1 < Etag: W/"18-928jOLijreS3ro9mYfVt0IU4k/0"
+1 < Date: Tue, 24 May 2022 18:38:17 GMT
+1 < Via: 1.1 vegur
+{
+  "error": "Bad request."
+}
+
+15:38:18.305 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) criarUsuario.feature
+15:41:46.519 [main]  INFO  com.intuit.karate - Karate version: 1.1.0
+15:41:46.701 [main]  DEBUG com.intuit.karate.Suite - [config] karate-config.js
+15:41:46.702 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1653417706702
+15:41:47.623 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 153
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "b15ec3a6-f21a-42db-9f2b-833ed9d27645user",
+  "email": "461716e6-53f6-43e2-95df-0ad052830231@academy-airlines.com",
+  "password": "1653417707411academy"
+}
+
+
+15:41:49.108 [main]  DEBUG com.intuit.karate - response time in milliseconds: 1479
+1 < 201
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 180
+1 < Etag: W/"b4-YOkN6eOKtSn3cwx/UZwyIghUEX8"
+1 < Date: Tue, 24 May 2022 18:41:48 GMT
+1 < Via: 1.1 vegur
+{
+  "id": "d2375cc6-4ef8-4612-b4b2-0c7192e78d51",
+  "name": "b15ec3a6-f21a-42db-9f2b-833ed9d27645user",
+  "email": "461716e6-53f6-43e2-95df-0ad052830231@academy-airlines.com",
+  "is_admin": false
+}
+
+15:41:49.155 [main]  INFO  c.intuit.karate.core.FeatureRuntime - hook.feature - call by tag at line 4: criarUsuario
+15:41:49.180 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 153
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "74375c58-d8f5-46d7-b359-e12b547669a9user",
+  "email": "213ffdd1-954e-4318-9cdc-51f5c7e16961@academy-airlines.com",
+  "password": "1653417709171academy"
+}
+
+
+15:41:50.143 [main]  DEBUG com.intuit.karate - response time in milliseconds: 961
+1 < 201
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 180
+1 < Etag: W/"b4-QAAw/dv2V1GhRe0WYiuuoFgw+H8"
+1 < Date: Tue, 24 May 2022 18:41:50 GMT
+1 < Via: 1.1 vegur
+{
+  "id": "e7bc6b00-6fd6-440a-bcde-d330528c16d0",
+  "name": "74375c58-d8f5-46d7-b359-e12b547669a9user",
+  "email": "213ffdd1-954e-4318-9cdc-51f5c7e16961@academy-airlines.com",
+  "is_admin": false
+}
+
+15:41:50.150 [main]  DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'payload' with new value: read("payloadUsuario.json")
+15:41:50.155 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 153
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "74375c58-d8f5-46d7-b359-e12b547669a9user",
+  "email": "213ffdd1-954e-4318-9cdc-51f5c7e16961@academy-airlines.com",
+  "password": "1653417709171academy"
+}
+
+
+15:41:50.939 [main]  DEBUG com.intuit.karate - response time in milliseconds: 784
+1 < 422
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 32
+1 < Etag: W/"20-R3itzQwmnR1Gj/otOwtMwb15SQQ"
+1 < Date: Tue, 24 May 2022 18:41:50 GMT
+1 < Via: 1.1 vegur
+{
+  "error": "User already exists."
+}
+
+15:41:50.981 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 196
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "c7082524-e3c8-4a09-af2e-3a663d14e74807cf98a4-8070-4f74-bd40-43bb039e569b07cf98a4-8070-4f74-bd40-43bb0",
+  "email": "6a2e07e9-e9d9-401d-94ce-901afedab9ce@academy.com",
+  "password": "#(password)"
+}
+
+
+15:41:51.783 [main]  DEBUG com.intuit.karate - response time in milliseconds: 801
+1 < 201
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 232
+1 < Etag: W/"e8-K/GMkoXjrMSSh9dyyMtF4CRh1EQ"
+1 < Date: Tue, 24 May 2022 18:41:51 GMT
+1 < Via: 1.1 vegur
+{
+  "id": "cb162cfe-fb28-48af-96e8-f37410468fe0",
+  "name": "c7082524-e3c8-4a09-af2e-3a663d14e74807cf98a4-8070-4f74-bd40-43bb039e569b07cf98a4-8070-4f74-bd40-43bb0",
+  "email": "6a2e07e9-e9d9-401d-94ce-901afedab9ce@academy.com",
+  "is_admin": false
+}
+
+15:41:51.786 [main]  ERROR com.intuit.karate - criarUsuario.feature:37
+Then status 400
+status code was: 201, expected: 400, response time in milliseconds: 801, url: https://lista-compras-api.herokuapp.com/api/v1/users, response: 
+{"id":"cb162cfe-fb28-48af-96e8-f37410468fe0","name":"c7082524-e3c8-4a09-af2e-3a663d14e74807cf98a4-8070-4f74-bd40-43bb039e569b07cf98a4-8070-4f74-bd40-43bb0","email":"6a2e07e9-e9d9-401d-94ce-901afedab9ce@academy.com","is_admin":false}
+criarUsuario.feature:37
+15:41:51.803 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 209
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "ecf1b557-44f8-4d76-b168-a772cd84a5ac07cf98a4-8070-4f74-bd40-43bb039e569b07cf98a4-8070-4f74-bd40-43bb0",
+  "email": "1b719b04-7bf9-476c-be88-3127ed224038094e3591c48bd@academy.com",
+  "password": "#(password)"
+}
+
+
+15:41:52.634 [main]  DEBUG com.intuit.karate - response time in milliseconds: 829
+1 < 201
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 245
+1 < Etag: W/"f5-Zqt6YMW+52cgmMgfsbDvfMRC2tQ"
+1 < Date: Tue, 24 May 2022 18:41:52 GMT
+1 < Via: 1.1 vegur
+{
+  "id": "7488b1a5-fdd6-4173-8635-1369fa17cd0d",
+  "name": "ecf1b557-44f8-4d76-b168-a772cd84a5ac07cf98a4-8070-4f74-bd40-43bb039e569b07cf98a4-8070-4f74-bd40-43bb0",
+  "email": "1b719b04-7bf9-476c-be88-3127ed224038094e3591c48bd@academy.com",
+  "is_admin": false
+}
+
+15:41:52.639 [main]  ERROR com.intuit.karate - criarUsuario.feature:46
+Then status 400
+status code was: 201, expected: 400, response time in milliseconds: 829, url: https://lista-compras-api.herokuapp.com/api/v1/users, response: 
+{"id":"7488b1a5-fdd6-4173-8635-1369fa17cd0d","name":"ecf1b557-44f8-4d76-b168-a772cd84a5ac07cf98a4-8070-4f74-bd40-43bb039e569b07cf98a4-8070-4f74-bd40-43bb0","email":"1b719b04-7bf9-476c-be88-3127ed224038094e3591c48bd@academy.com","is_admin":false}
+criarUsuario.feature:46
+15:41:52.725 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 96
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "85d01e14-a784-4134-8ea8-c9fb0c845d01user",
+  "email": {
+  },
+  "password": "1653417712668academy"
+}
+
+
+15:41:53.521 [main]  DEBUG com.intuit.karate - response time in milliseconds: 795
+1 < 400
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 24
+1 < Etag: W/"18-928jOLijreS3ro9mYfVt0IU4k/0"
+1 < Date: Tue, 24 May 2022 18:41:53 GMT
+1 < Via: 1.1 vegur
+{
+  "error": "Bad request."
+}
+
+15:41:53.586 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 108
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "feef20ec-c11f-4c5b-8b02-a15caed2d228user",
+  "email": "@academy.com",
+  "password": "1653417713550academy"
+}
+
+
+15:41:55.227 [main]  DEBUG com.intuit.karate - response time in milliseconds: 1640
+1 < 400
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 24
+1 < Etag: W/"18-928jOLijreS3ro9mYfVt0IU4k/0"
+1 < Date: Tue, 24 May 2022 18:41:54 GMT
+1 < Via: 1.1 vegur
+{
+  "error": "Bad request."
+}
+
+15:41:55.267 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 96
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "24095b3e-01cb-42ed-b526-cf1ec4aae10buser",
+  "email": "",
+  "password": "1653417715247academy"
+}
+
+
+15:41:56.053 [main]  DEBUG com.intuit.karate - response time in milliseconds: 784
+1 < 400
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 24
+1 < Etag: W/"18-928jOLijreS3ro9mYfVt0IU4k/0"
+1 < Date: Tue, 24 May 2022 18:41:55 GMT
+1 < Via: 1.1 vegur
+{
+  "error": "Bad request."
+}
+
+15:41:56.109 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 113
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "",
+  "email": "0bc397b2-a422-4fed-a108-55783b018f29@academy-airlines.com",
+  "password": "1653417716078academy"
+}
+
+
+15:41:57.082 [main]  DEBUG com.intuit.karate - response time in milliseconds: 970
+1 < 400
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 24
+1 < Etag: W/"18-928jOLijreS3ro9mYfVt0IU4k/0"
+1 < Date: Tue, 24 May 2022 18:41:56 GMT
+1 < Via: 1.1 vegur
+{
+  "error": "Bad request."
+}
+
+15:41:57.099 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 133
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "79c03a19-b505-4f52-8d52-530bfea2c002user",
+  "email": "47b79d16-f818-456a-a597-3f06aff5f1ea@academy-airlines.com",
+  "password": ""
+}
+
+
+15:41:57.904 [main]  DEBUG com.intuit.karate - response time in milliseconds: 805
+1 < 400
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 24
+1 < Etag: W/"18-928jOLijreS3ro9mYfVt0IU4k/0"
+1 < Date: Tue, 24 May 2022 18:41:57 GMT
+1 < Via: 1.1 vegur
+{
+  "error": "Bad request."
+}
+
+15:41:58.575 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) criarUsuario.feature
+15:43:33.796 [main]  INFO  com.intuit.karate - Karate version: 1.1.0
+15:43:33.970 [main]  DEBUG com.intuit.karate.Suite - [config] karate-config.js
+15:43:33.971 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1653417813971
+15:43:34.858 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 153
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "5bc08677-f448-4506-a419-943208694e73user",
+  "email": "54271b5a-3425-475a-a98f-1ed41db55360@academy-airlines.com",
+  "password": "1653417814646academy"
+}
+
+
+15:43:36.083 [main]  DEBUG com.intuit.karate - response time in milliseconds: 1223
+1 < 201
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 180
+1 < Etag: W/"b4-Rn8HtgjSoxQfIpb12sTYxLyT0aQ"
+1 < Date: Tue, 24 May 2022 18:43:35 GMT
+1 < Via: 1.1 vegur
+{
+  "id": "8f7aa94b-743a-4059-8ea6-02795501f7ae",
+  "name": "5bc08677-f448-4506-a419-943208694e73user",
+  "email": "54271b5a-3425-475a-a98f-1ed41db55360@academy-airlines.com",
+  "is_admin": false
+}
+
+15:43:36.113 [main]  INFO  c.intuit.karate.core.FeatureRuntime - hook.feature - call by tag at line 4: criarUsuario
+15:43:36.130 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 153
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "548abc3a-ff0a-47fb-98a3-fae3389e431euser",
+  "email": "ed06dbcd-da30-4f41-92fe-507f83843251@academy-airlines.com",
+  "password": "1653417816122academy"
+}
+
+
+15:43:36.963 [main]  DEBUG com.intuit.karate - response time in milliseconds: 832
+1 < 201
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 180
+1 < Etag: W/"b4-OEdFDE1cgpwC0BJtCIqqSxstbvU"
+1 < Date: Tue, 24 May 2022 18:43:36 GMT
+1 < Via: 1.1 vegur
+{
+  "id": "fb3559bb-122a-42de-9094-62a7a1aa2eec",
+  "name": "548abc3a-ff0a-47fb-98a3-fae3389e431euser",
+  "email": "ed06dbcd-da30-4f41-92fe-507f83843251@academy-airlines.com",
+  "is_admin": false
+}
+
+15:43:36.975 [main]  DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'payload' with new value: read("payloadUsuario.json")
+15:43:36.980 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 153
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "548abc3a-ff0a-47fb-98a3-fae3389e431euser",
+  "email": "ed06dbcd-da30-4f41-92fe-507f83843251@academy-airlines.com",
+  "password": "1653417816122academy"
+}
+
+
+15:43:37.766 [main]  DEBUG com.intuit.karate - response time in milliseconds: 784
+1 < 422
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 32
+1 < Etag: W/"20-R3itzQwmnR1Gj/otOwtMwb15SQQ"
+1 < Date: Tue, 24 May 2022 18:43:37 GMT
+1 < Via: 1.1 vegur
+{
+  "error": "User already exists."
+}
+
+15:43:37.791 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 196
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "fbf28423-74b6-4591-aab7-44dc68eb8c5107cf98a4-8070-4f74-bd40-43bb039e569b07cf98a4-8070-4f74-bd40-43bb0",
+  "email": "252e054f-a3c0-46c9-96a0-8656650f0208@academy.com",
+  "password": "#(password)"
+}
+
+
+15:43:38.612 [main]  DEBUG com.intuit.karate - response time in milliseconds: 821
+1 < 201
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 232
+1 < Etag: W/"e8-LmAekQ5mUZrAh5tYfq2xK09g2ic"
+1 < Date: Tue, 24 May 2022 18:43:38 GMT
+1 < Via: 1.1 vegur
+{
+  "id": "b140bef3-5dc8-4d1e-b37e-e2781668e425",
+  "name": "fbf28423-74b6-4591-aab7-44dc68eb8c5107cf98a4-8070-4f74-bd40-43bb039e569b07cf98a4-8070-4f74-bd40-43bb0",
+  "email": "252e054f-a3c0-46c9-96a0-8656650f0208@academy.com",
+  "is_admin": false
+}
+
+15:43:38.615 [main]  ERROR com.intuit.karate - criarUsuario.feature:37
+Then status 400
+status code was: 201, expected: 400, response time in milliseconds: 821, url: https://lista-compras-api.herokuapp.com/api/v1/users, response: 
+{"id":"b140bef3-5dc8-4d1e-b37e-e2781668e425","name":"fbf28423-74b6-4591-aab7-44dc68eb8c5107cf98a4-8070-4f74-bd40-43bb039e569b07cf98a4-8070-4f74-bd40-43bb0","email":"252e054f-a3c0-46c9-96a0-8656650f0208@academy.com","is_admin":false}
+criarUsuario.feature:37
+15:43:38.635 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 209
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "9f22ab30-2cb8-4aa5-ab6d-94520c06839b07cf98a4-8070-4f74-bd40-43bb039e569b07cf98a4-8070-4f74-bd40-43bb0",
+  "email": "e383183b-f24d-4a06-aee3-6d03ce196752094e3591c48bd@academy.com",
+  "password": "#(password)"
+}
+
+
+15:43:39.484 [main]  DEBUG com.intuit.karate - response time in milliseconds: 844
+1 < 201
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 245
+1 < Etag: W/"f5-Ner890tF+pz/opHjM58OEJuwR38"
+1 < Date: Tue, 24 May 2022 18:43:39 GMT
+1 < Via: 1.1 vegur
+{
+  "id": "cc742ec7-f736-4add-bc12-87edfec67568",
+  "name": "9f22ab30-2cb8-4aa5-ab6d-94520c06839b07cf98a4-8070-4f74-bd40-43bb039e569b07cf98a4-8070-4f74-bd40-43bb0",
+  "email": "e383183b-f24d-4a06-aee3-6d03ce196752094e3591c48bd@academy.com",
+  "is_admin": false
+}
+
+15:43:39.487 [main]  ERROR com.intuit.karate - criarUsuario.feature:46
+Then status 400
+status code was: 201, expected: 400, response time in milliseconds: 844, url: https://lista-compras-api.herokuapp.com/api/v1/users, response: 
+{"id":"cc742ec7-f736-4add-bc12-87edfec67568","name":"9f22ab30-2cb8-4aa5-ab6d-94520c06839b07cf98a4-8070-4f74-bd40-43bb039e569b07cf98a4-8070-4f74-bd40-43bb0","email":"e383183b-f24d-4a06-aee3-6d03ce196752094e3591c48bd@academy.com","is_admin":false}
+criarUsuario.feature:46
+15:43:39.520 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 96
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "305fa1e1-1213-484a-873f-b92f20db792auser",
+  "email": {
+  },
+  "password": "1653417819496academy"
+}
+
+
+15:43:40.500 [main]  DEBUG com.intuit.karate - response time in milliseconds: 979
+1 < 400
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 24
+1 < Etag: W/"18-928jOLijreS3ro9mYfVt0IU4k/0"
+1 < Date: Tue, 24 May 2022 18:43:40 GMT
+1 < Via: 1.1 vegur
+{
+  "error": "Bad request."
+}
+
+15:43:40.542 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 108
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "b8fe2ae7-4aa7-4e84-a97a-f95c25d8b7dcuser",
+  "email": "@academy.com",
+  "password": "1653417820516academy"
+}
+
+
+15:43:41.528 [main]  DEBUG com.intuit.karate - response time in milliseconds: 984
+1 < 400
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 24
+1 < Etag: W/"18-928jOLijreS3ro9mYfVt0IU4k/0"
+1 < Date: Tue, 24 May 2022 18:43:41 GMT
+1 < Via: 1.1 vegur
+{
+  "error": "Bad request."
+}
+
+15:43:41.550 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 96
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "de1f86a9-225c-48eb-8ecb-25bbffc23688user",
+  "email": "",
+  "password": "1653417821543academy"
+}
+
+
+15:43:42.349 [main]  DEBUG com.intuit.karate - response time in milliseconds: 797
+1 < 400
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 24
+1 < Etag: W/"18-928jOLijreS3ro9mYfVt0IU4k/0"
+1 < Date: Tue, 24 May 2022 18:43:42 GMT
+1 < Via: 1.1 vegur
+{
+  "error": "Bad request."
+}
+
+15:43:42.373 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 113
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "",
+  "email": "109e3ce8-286d-4e43-b004-6c60345fa002@academy-airlines.com",
+  "password": "1653417822357academy"
+}
+
+
+15:43:43.171 [main]  DEBUG com.intuit.karate - response time in milliseconds: 798
+1 < 400
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 24
+1 < Etag: W/"18-928jOLijreS3ro9mYfVt0IU4k/0"
+1 < Date: Tue, 24 May 2022 18:43:43 GMT
+1 < Via: 1.1 vegur
+{
+  "error": "Bad request."
+}
+
+15:43:43.183 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://lista-compras-api.herokuapp.com/api/v1/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 133
+1 > Host: lista-compras-api.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18)
+1 > Accept-Encoding: gzip,deflate
+{
+  "name": "f92f1d2b-50de-4c2c-81c6-77684a420518user",
+  "email": "ba798ff4-9fe1-4056-a8c8-5942299361fe@academy-airlines.com",
+  "password": ""
+}
+
+
+15:43:43.992 [main]  DEBUG com.intuit.karate - response time in milliseconds: 808
+1 < 400
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 24
+1 < Etag: W/"18-928jOLijreS3ro9mYfVt0IU4k/0"
+1 < Date: Tue, 24 May 2022 18:43:43 GMT
+1 < Via: 1.1 vegur
+{
+  "error": "Bad request."
+}
+
+15:43:44.833 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) criarUsuario.feature
