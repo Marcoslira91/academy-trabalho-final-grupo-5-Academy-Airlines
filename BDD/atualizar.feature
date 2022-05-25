@@ -10,7 +10,7 @@ Para manter meus dados atualizados no sistema.
     Cenario: atualizo dados com sucesso
         Quando altero nome ou email
         E Clico em confirma alterações
-        Entao os dados são atualizados com sucesso
+        Entao Os dados são atualizados com sucesso
 
     Cenario: atualizo email para um já existente
         Quando altero o email para um já existente

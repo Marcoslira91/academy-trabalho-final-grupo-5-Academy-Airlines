@@ -8,9 +8,9 @@ Para registrar os produtos que desejo comprar.
         E Informo email e senha validos para logar
 
     Cenario: criar lista de compras com sucesso
-        Quando informo um nome para a lista
-        E informo nome e quantidade dos itens
-        Entao salvo minha lista com sucesso
+        Quando Informo um nome para a lista
+        E Informo nome e quantidade dos itens
+        Entao Salvo minha lista com sucesso
     
     Cenario: criar lista de compras sem descrição
         Quando não informo um nome para a lista

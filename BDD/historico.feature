@@ -8,9 +8,9 @@ Para visualizar minhas últimas compras.
         E Informo email e senha validos para logar
 
     Cenario: visualizar histórico de compras com sucesso
-        Quando acesso histórico de lista
-        Entao consigo visualizar minha lista de compra
-        E somente visualizo as 10 ultimas listas
+        Quando Acesso histórico de lista
+        Entao Consigo visualizar minha lista de compra
+        E Somente visualizo as 10 ultimas listas
 
     Cenario: visualizar lista de compras com sucesso
         Quando acesso histórico de lista

@@ -9,7 +9,7 @@ Para conseguir utilizar os serviços do Lembra Compras.
     Cenario: login realizado com sucesso
         Quando Informo um email e senha valido
         E Clico em Entrar 
-        Entao o login ao sistema é efetuado com sucesso
+        Entao O login ao sistema é efetuado com sucesso
     
     Cenario: login com senha incorreta
         Quando Informo email e senha incorreta

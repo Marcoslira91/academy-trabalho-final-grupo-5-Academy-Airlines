@@ -10,12 +10,12 @@ Para ter acesso as funcionalidades de lista de compras.
     Cenario: Cadastro realizado com sucesso
         Quando Informo os dados necessárias para cadastrar um usuário
         E Clico em registrar
-        Entao efetuo cadastro com sucesso
+        Entao Efetuo cadastro com sucesso
     
     Cenario: Cadastro sem nome
         Quando Informo email, senha e confirmação de senha
-        E não informo o nome
-        Entao não é possível efetuar cadastro com sucesso
+        E Não informo o nome
+        Entao Não é possível efetuar cadastro com sucesso
 
     Cenario: Cadastro sem email
         Quando Informo nome a senha e confirmação de senha
