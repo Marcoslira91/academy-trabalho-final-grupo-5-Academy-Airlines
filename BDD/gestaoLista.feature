@@ -5,13 +5,12 @@ Para registrar os produtos que desejo comprar.
 
     Contexto: Iniciei o sistema
         Dado Que iniciei o sistema Lembra Compra
-        E Informo email e senha para logar
+        E Informo email e senha validos para logar
 
     Cenario: criar lista de compras com sucesso
-        Quando nomeio a lista
+        Quando informo um nome para a lista
         E informo nome e quantidade dos itens
         Entao salvo minha lista com sucesso
-        E consigo ter apenas 1 lista ativa
     
     Cenario: criar lista de compras sem descrição
         Quando não informo um nome para a lista
@@ -19,30 +18,31 @@ Para registrar os produtos que desejo comprar.
         Entao salvo minha lista com sucesso
 
     Cenario: criar lista de compras com quantidade menor que 1 de um determinado item
-        Quando nomeio a lista
+        Quando informo ou não um nome para a lista
         E informo quantidade menor que 1 de um determinado item
-        Entao não salvo minha lista com sucesso
+        Entao não é possível adicionar o item a lista
 
     Cenario: criar lista de compras com quantidade maior que 1000 de um determinado item
-        Quando nomeio a lista
+        Quando informo ou não um nome para a lista
         E informo quantidade maior que 1000 de um determinado item
-        Entao não salvo minha lista com sucesso
+        Entao não é possível adicionar o item a lista
     
     Cenario: criar lista de compras com itens duplicados
-        Quando nomeio a lista
-        E informo um item já adicionado
+        Quando informo ou não um nome para a lista
+        E informo um item já existente
+        E clico em salva
         Entao a quantidade de itens devem ser acrescentada
         E não pode ultrapassar 1000 unidades
 
     Cenario: atualizar lista de compras
         Quando abro uma lista ativa
-        E informo um item já adicionado
-        Entao a quantidade os itens devem ser adicionados
+        E informo um item já existente
+        Entao a quantidade os itens devem ser acrescentada
 
     Cenario: atualizar lista de compras com itens duplicados
         Quando abro uma lista ativa
-        E informo um item já adicionado
-        Entao a quantidade de itens atualizados devem ser acrescentada
+        E informo um item já existente
+        Entao a quantidade de itens é atualizada
 
     Cenario: concluo item da lista de compras
         Quando abro uma lista ativa
@@ -52,5 +52,6 @@ Para registrar os produtos que desejo comprar.
     Cenario: finalizo lista de compras
         Quando abro uma lista ativa
         E clico em finalizar
+        E em confirma
         Entao a lista é finalizada com sucesso
         E status não pode ser alterado

@@ -7,21 +7,25 @@ Para conseguir utilizar os serviços do Lembra Compras.
         Dado Que iniciei o sistema Lembra Compra
 
     Cenario: login realizado com sucesso
-        Quando Informo email e senha
-        Entao efetuo login no sistema com sucesso
+        Quando Informo um email e senha valido
+        E Clico em Entrar 
+        Entao o login ao sistema é efetuado com sucesso
     
     Cenario: login com senha incorreta
         Quando Informo email e senha incorreta
-        Entao não consigo efetuar login com sucesso
+        E Clico em Entrar
+        Entao não consigo efetuar login
 
     Cenario: login sem senha
-        Quando Informo email e não informo o senha
-        Entao não consigo efetuar login com sucesso
+        Quando Informo email e não informo a senha
+        E Clico em Entrar
+        Entao não consigo efetuar login
 
     Cenario: login com email não cadastrado
-        Quando Informo email não cadastrado
-        Entao não consigo efetuar login com sucesso
+        Quando Informo email e senha não cadastrado
+        E Clico em Entrar
+        Entao não consigo efetuar login
     
     Cenario: login com email com formato inválido
         Quando Informo email com formato inválido
-        Entao não consigo efetuar login com sucesso
+        Entao não consigo efetuar login

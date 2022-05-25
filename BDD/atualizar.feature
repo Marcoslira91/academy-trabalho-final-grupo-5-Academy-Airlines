@@ -4,21 +4,26 @@ Desejo atualizar minhas informações básicas
 Para manter meus dados atualizados no sistema.
 
     Contexto: Iniciei o sistema
-        Dado Que iniciei o sistema Lembra Compra
-        E Informo email e senha para logar
+        Dado Que estou logado no sistema Lembra Compra
+        E Clico em perfil no menu para acessar as minhas informações
 
     Cenario: atualizo dados com sucesso
-        Quando altero nome e email
-        Entao atualizo dados com sucesso
+        Quando altero nome ou email
+        E Clico em confirma alterações
+        Entao os dados são atualizados com sucesso
 
     Cenario: atualizo email para um já existente
-        Quando altero nome e email já existente
-        Entao não atualizo dados com sucesso
+        Quando altero o email para um já existente
+        E Clico em confirma alterações
+        E em confirma
+        Entao os dados não são atualizados
     
     Cenario: atualizo nome com mais de 100 caracteres
         Quando altero nome com mais de 100 caracteres
-        Entao não atualizo dados com sucesso
+        E Clico em confirma alterações
+        Entao os dados não são atualizados
 
     Cenario: atualizo email com mais de 60 caracteres
         Quando altero email com mais de 60 caracteres
-        Entao não atualizo dados com sucesso
+        E Clico em confirma alterações
+        Entao os dados não são atualizados

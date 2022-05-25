@@ -5,7 +5,7 @@ Para visualizar minhas últimas compras.
 
     Contexto: Iniciei o sistema
         Dado Que iniciei o sistema Lembra Compra
-        E Informo email e senha para logar
+        E Informo email e senha validos para logar
 
     Cenario: visualizar histórico de compras com sucesso
         Quando acesso histórico de lista

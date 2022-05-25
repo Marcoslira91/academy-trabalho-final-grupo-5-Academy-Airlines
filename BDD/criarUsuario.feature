@@ -8,33 +8,40 @@ Para ter acesso as funcionalidades de lista de compras.
         E Clico em registre-se
 
     Cenario: Cadastro realizado com sucesso
-        Quando Informo meus dados para cadastro
+        Quando Informo os dados necessárias para cadastrar um usuário
+        E Clico em registrar
         Entao efetuo cadastro com sucesso
     
     Cenario: Cadastro sem nome
-        Quando Informo email e senha e não informo o nome
-        Entao não consigo efetuar cadastro com sucesso
+        Quando Informo email, senha e confirmação de senha
+        E não informo o nome
+        Entao não é possível efetuar cadastro com sucesso
 
     Cenario: Cadastro sem email
-        Quando Informo nome e senha e não informo o email
-        Entao não consigo efetuar cadastro com sucesso
+        Quando Informo nome a senha e confirmação de senha
+        E não informo o email
+        Entao não é possível efetuar cadastro com sucesso
 
     Cenario: Cadastro com formato inválido de email
-        Quando Informo nome e senha e informo o email com formato inválido
-        Entao não consigo efetuar cadastro com sucesso
+        Quando Informo nome a senha e confirmação de senha
+        E informo um email com formato inválido
+        Entao não é possível efetuar cadastro com sucesso
     
-    Cenario: Cadastro com email já cadastrado
-        Quando Informo nome e senha e informo o email já existente
-        Entao não consigo efetuar cadastro com sucesso
+    Cenario: Cadastro com email já utilizado
+        Quando Informo nome a senha e confirmação de senha
+        E informo o email já existente
+        Entao não é possível efetuar cadastro com sucesso
         E mensagem de User already exists deve ser exibida
 
     Cenario: Cadastro sem senha
-        Quando Informo nome e email e não informo o senha
-        Entao não consigo efetuar cadastro com sucesso
+        Quando Informo nome e email 
+        E não informo a senha
+        Entao não é possível efetuar cadastro com sucesso
     
     Cenario: Cadastro sem confirmação de senha
-        Quando Informo nome, email e senha e não informo o confirmação de senha
-        Entao não consigo efetuar cadastro com sucesso
+        Quando Informo nome, email e senha 
+        E não informo a confirmação de senha
+        Entao não é possível efetuar cadastro com sucesso
 
     Cenario: Cadastro com nome maior que 100 caracteres
         Quando Informo nome com mais de 100 caracteres
