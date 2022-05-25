@@ -13,9 +13,9 @@ Para registrar os produtos que desejo comprar.
         Entao Salvo minha lista com sucesso
     
     Cenario: criar lista de compras sem descrição
-        Quando não informo um nome para a lista
-        E informo nome e quantidade dos itens
-        Entao salvo minha lista com sucesso
+        Quando Não informo um nome para a lista
+        E Informo nome e quantidade dos itens
+        Entao Salvo minha lista com sucesso
 
     Cenario: criar lista de compras com quantidade menor que 1 de um determinado item
         Quando informo ou não um nome para a lista

@@ -13,6 +13,6 @@ Para visualizar minhas últimas compras.
         E Somente visualizo as 10 ultimas listas
 
     Cenario: visualizar lista de compras com sucesso
-        Quando acesso histórico de lista
-        E consulto uma lista
-        Entao consigo visualizar nome e itens
+        Quando Acesso histórico de lista
+        E Consulto uma lista
+        Entao Consigo visualizar nome e itens

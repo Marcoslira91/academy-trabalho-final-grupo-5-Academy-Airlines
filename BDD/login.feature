@@ -14,7 +14,7 @@ Para conseguir utilizar os serviços do Lembra Compras.
     Cenario: login com senha incorreta
         Quando Informo email e senha incorreta
         E Clico em Entrar
-        Entao não consigo efetuar login
+        Entao Não consigo efetuar login
 
     Cenario: login sem senha
         Quando Informo email e não informo a senha

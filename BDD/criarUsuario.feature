@@ -19,8 +19,8 @@ Para ter acesso as funcionalidades de lista de compras.
 
     Cenario: Cadastro sem email
         Quando Informo nome a senha e confirmação de senha
-        E não informo o email
-        Entao não é possível efetuar cadastro com sucesso
+        E Não informo o email
+        Entao Não é possível efetuar cadastro com sucesso
 
     Cenario: Cadastro com formato inválido de email
         Quando Informo nome a senha e confirmação de senha

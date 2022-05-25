@@ -15,8 +15,8 @@ Para manter meus dados atualizados no sistema.
     Cenario: atualizo email para um já existente
         Quando altero o email para um já existente
         E Clico em confirma alterações
-        E em confirma
-        Entao os dados não são atualizados
+        E Em confirma
+        Entao Os dados não são atualizados
     
     Cenario: atualizo nome com mais de 100 caracteres
         Quando altero nome com mais de 100 caracteres
